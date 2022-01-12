@@ -1,0 +1,100 @@
+.message-content {
+	padding: 0px 20px;
+	font-size: 16px;
+}
+.message-content>.title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 28px 0px 40px;
+}
+.message-content .layui-tab {
+	margin: 0px;
+}
+.layui-tab-title .layui-this:after {
+	display: none;
+}
+.layui-tab-title li {
+	font-size: 16px;
+	padding: 0px 26px;
+	background: #EEEEEE;
+	border-left: 1px solid #fff;
+}
+.layui-tab-title .layui-this {
+	background: #0D8CDB;
+	color: #fff;
+	border-color: #fff;;
+}
+.layui-tab {
+	position: relative;
+}
+.layui-tab-p {
+	position: absolute;
+	right: 18px;
+	top: 10px;
+	cursor: pointer;
+}
+.left-cont .title {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+.left-cont .title i {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #BFBFBF;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+.left-cont .title .txt {
+	font-weight: bold;
+	font-size: 18px;
+	color: #0A6BBA;
+}
+.left-cont .title .tip {
+	display: inline-block;
+	padding: 5px 11px;
+	background: #95C6EE;
+	color: #fff;
+	font-size: 15px;
+}
+.left-cont .person {
+	color: #aaa;
+	padding: 10px 0px;
+}
+.left-cont .person span {
+	margin: 0px 10px 0px 0px;
+}
+.layui-tab-item li {
+	padding-bottom: 16px;
+	padding-top: 10px;
+	border-bottom: 1px dashed #ddd;
+}
+.layui-tab-item li:last-child {
+	border-bottom: 0 none;
+}
+.flex-box {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.right-txt {
+	font-size: 17px;
+	font-weight: bold;
+}
+.red-txt {
+	color: #E80115;
+}
+.message-txt {
+	background: #F5F5F5;
+	padding: 10px 12px;
+}
+.message-txt span {
+	line-height: 24px;
+}
+.message-txt a {
+	color: #2E78BF;
+	cursor: pointer;
+}

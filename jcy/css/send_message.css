@@ -1,0 +1,85 @@
+.common-all-container h4 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0px;
+}
+.send-message {
+	width: 70%;
+	margin: 0 auto;
+	background: #eee;
+}
+.send-msg-item {
+	display: flex;
+	border-bottom: 1px solid #fff;
+}
+.send-message .left {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #DBEDF9;
+	padding: 12px 0px;
+}
+.send-message .left i {
+	color: #E40013;
+}
+.send-msg-item span {
+	color: #3F80C4;
+	font-size: 17px;
+}
+.send-message .right {
+	padding: 12px 0px 16px;
+	width: calc(100% - 200px);
+	padding-right: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	background: #ECF7FD;
+}
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+	color: #1365B9;
+}
+.layui-form-radio * {
+	font-size: 17px;
+}
+.layui-input-block {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
+}
+.layui-form-radio {
+	margin: 6px 30px 0 0;
+}
+.layui-form-item {
+	margin-bottom: 0px;
+}
+.textarea-box {
+	min-height: 240px;
+	width: 100%;
+	border-color: #DEDEDE;
+	resize: none;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.btns-list {
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	padding: 30px 0px;
+}
+.btns-list span {
+	display: inline-block;
+	padding: 12px 46px;
+	margin-right: 25px;
+}
+.btns-list span:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+.btns-list span:first-child {
+	background: #0D8CDD;
+	color: #fff;
+}
+.btns-list span:last-child {
+	background: #DEDEDE;
+}
