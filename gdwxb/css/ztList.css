@@ -1,0 +1,35 @@
+.zt-list{
+    display: flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 12px 45px !important;
+}
+.zt-item{
+    display: flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 320px;
+    flex-direction: column;
+    margin: 6px 6px;
+}
+.zt-item img{
+    width: 310px;
+    height: 180px;
+}
+.zt-item span {
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px
+}
+.zt-item span a{
+    font-size: 16px;
+}

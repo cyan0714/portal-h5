@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=8,9,10,edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中共广东省委网络安全和信息化委员会办公室</title>
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../../lib/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/list.css"/>
+</head>
+<body>
+<div class="wxb-container">
+    <div class="top-container">
+        <div class="time-block">
+            <div class="common-container time-flex">
+                <p class="time-left">2021年12月20日 星期一</p>
+                <p class="time-right"><a>设为首页</a> <span>|</span> <a>加入收藏</a></p>
+            </div>
+        </div>
+        <div class="title-block">
+            <div class="common-container title-flex">
+                <div class="layui-carousel title-left" id="carousel1">
+                    <div carousel-item>
+                        <div>
+                            <p><img src="../imgs/logo_1.png"/></p>
+                        </div>
+                        <div>
+                            <p><img src="../imgs/logo_2.png"/></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-right search-box">
+                    <input type="text" placeholder=""/>
+                    <span>搜索</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="common-container">
+            <div class="daohang-box">
+                <ul class="tabs-box" id="tabs-box">
+                    <li class="">首页</li>
+                    <li>
+                        机关党建
+                    </li>
+                    <li>
+                        网信动态
+                    </li>
+                    <li>
+                        规章制度
+                    </li>
+                    <li>
+                        财务管理
+                    </li>
+                    <li>
+                        工会之窗
+                    </li>
+                    <li class="active">服务保障
+                    </li>
+                    <li>
+                        法律法规
+                    </li>
+                </ul>
+            </div>
+            <!--<p class="navigator">
+            </p>-->
+            <p class="title">
+                <span id="channelName">服务保障</span>
+            </p>
+            <div class="content-box">
+                <div class="content-left">
+                    <div class="tab_tit">
+                        <ul id="left_menu">
+                            <li class=""><a
+                                    href="">物业管理</a>
+                            </li>
+                            <li class="on"><a
+                                    href="">法务支持</a>
+                            </li>
+                            <li class=""><a
+                                    href="">技术支持</a>
+                            </li>
+                        </ul>
+                        <div class="select" style="top: 59px;"></div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <ul class="content-item">
+                        <ul class="content-item">
+                            <li>
+                                <p>
+                                    <a href=""
+                                       target="_blank" style="width: 85%;">物业管理2物业管理2物业管理2物业管理2物业管理2物业管理2物业管理2物业管理2</a>
+                                    <span>2021-11-18</span>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <a href=""
+                                       target="_blank"
+                                       style="width: 85%;">技术支持技术支持技术支持技术支持技术支持技术支持技术支持技术支持技术支持技术支持技...</a>
+                                    <span>2021-10-11</span>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <a href=""
+                                       target="_blank"
+                                       style="width: 85%;">法务支持法务支持法务支持法务支持法务支持法务支持法务支持法务支持法务支持法务支持法...</a>
+                                    <span>2021-10-11</span>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <a href=""
+                                       target="_blank"
+                                       style="width: 85%;">物业管理物业管理物业管理物业管理物业管理物业管理物业管理物业管理物业管理物业管理物...</a>
+                                    <span>2021-10-11</span>
+                                </p>
+                            </li>
+
+
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="limitPage">
+                    第1页/共1页（共4条记录）&nbsp;&nbsp;首页&nbsp;&nbsp;上一页&nbsp;&nbsp;下一页&nbsp;&nbsp;尾页
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-msg">
+        <div class="common-container">
+            <p>中共广东省委网络安全和信息化委员会办公室</p>
+            <p>广东省互联网信息办公室</p>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../../lib/layui/layui.js"></script>
+<script src="../../lib/jquery/jquery3.min.js"></script>
+<script src="../../lib/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#carousel1'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'none' //始终显示箭头
+                ,anim: 'updown' //切换动画方式
+                ,indicator: 'none'
+            });
+
+        });
+
+    })
+
+
+</script>
+</body>
+</html>
