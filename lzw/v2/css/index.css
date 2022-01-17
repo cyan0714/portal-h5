@@ -455,6 +455,13 @@
 .main .khn-box .khn-content .khn-rotaion-box .khn-swiper img {
   margin: 6px 0 10px;
 }
+.main .khn-box .khn-content .khn-rotaion-box .khn-swiper p {
+  padding: 0 1.6em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid red;
+}
 
 .main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-btn {
   position: absolute;
