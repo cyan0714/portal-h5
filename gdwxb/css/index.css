@@ -24,6 +24,7 @@
 .fixed-block .top > p:first-child {
     padding-bottom: 14px;
     text-align: center;
+    font-weight: bold;
 }
 
 .fixed-block .top > p:last-child {
@@ -31,6 +32,7 @@
     padding: 0 10px;
     font-size: 14px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .fixed-block .bot {
@@ -337,6 +339,10 @@
     margin-bottom: 30px;
 }
 
+.common-cont-block .cont-item .list {
+    min-height: 140px;
+}
+
 .common-cont-block > div:nth-child(2n) {
     margin-right: 0;
 }
@@ -374,6 +380,11 @@
 .cont-item .tit-right a:hover {
     cursor: pointer;
     color: #C20314;
+}
+
+.cont-item .tit-right .select {
+    color: #D60508;
+    font-weight: bold
 }
 
 .cont-item .tit-right span {
