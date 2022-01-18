@@ -1,6 +1,6 @@
 .contaier {
   width: 100%;
-  min-width: 1200px;
+  min-width: 1300px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -64,29 +64,38 @@
 .header .nav-banner {
   width: 100%;
   height: 50px;
+  background: #064ec0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header .nav-banner .layui-nav {
-  width: 100%;
+  width: 1100px;
   height: 100%;
+  padding: 0;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 0;
-  background: #064ec0;
   color: #fff;
+  background: rgba(0, 0, 0, 0);
 }
 .header .nav-banner .layui-nav .layui-nav-item {
   line-height: 50px;
 }
-.header .nav-banner .layui-nav .layui-nav-bar{
+.header .nav-banner .layui-nav .layui-nav-bar {
   background: #b0130f;
 }
 .header .nav-banner .layui-nav .layui-nav-item a {
-  padding: 0 30px;
   font-size: 22px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.5px;
+  padding: 0;
 }
+.header .nav-banner .layui-nav .layui-nav-item.layui-this::after {
+  background: #b0130f;
+}
+
 .main {
   width: 1100px;
   flex: 1;
@@ -182,7 +191,6 @@
   padding-right: 64px;
   width: 568px;
   box-sizing: border-box;
-  font-family: SimSun;
 }
 .main .lnews-box .left-aside .lnews-content:not(:first-child) {
   margin-top: 36px;
