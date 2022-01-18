@@ -1,5 +1,8 @@
 :root {
   box-sizing: border-box;
+  --main-color: #cd0104;
+  --main-border-color: #f32022;
+  --main-list-style-bg-color: #e60814;
 }
 *,
 ::before,
@@ -12,7 +15,16 @@ ol {
 }
 li {
   cursor: pointer;
+  &:hover {
+    color: var(--main-color);
+  }
+  a {
+    &:hover {
+      color: var(--main-color);
+    }
+  }
 }
+
 body,
 h1,
 h2,
@@ -118,13 +130,13 @@ td {
           background-color: #fff;
           &--title {
             padding: 0 10px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid #f32022;
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 10px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
             }
             a {
@@ -164,13 +176,13 @@ td {
           &--title {
             padding-left: 10px;
             padding-right: 5px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid #f32022;
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 10px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
             }
             a {
@@ -195,13 +207,13 @@ td {
           &--title {
             padding-left: 10px;
             padding-right: 4px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid #f32022;
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 10px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
             }
             a {
@@ -235,6 +247,28 @@ td {
           background-color: #fff;
           padding-bottom: 10px;
           position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 59.5%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 3px 0 3px 3px;
+            border-color: transparent transparent transparent #cd0104;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 40%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 3px 3px 3px 0;
+            border-color: transparent #cd0104 transparent transparent;
+          }
           h2 {
             position: relative;
             color: #cd0104;
@@ -250,7 +284,7 @@ td {
               display: block;
               width: 40%;
               height: 1px;
-              background-color: #cd0104;
+              background-color: var(--main-color);
             }
             &::after {
               content: '';
@@ -261,7 +295,7 @@ td {
               display: block;
               width: 40%;
               height: 1px;
-              background-color: #cd0104;
+              background-color: var(--main-color);
             }
           }
           //   // mySwiper
@@ -326,13 +360,13 @@ td {
           &--title {
             padding-left: 10px;
             padding-right: 5px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid #f32022;
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 4px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
             }
             a {
@@ -625,13 +659,13 @@ td {
           &--title {
             padding-left: 30px;
             padding-right: 10px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid var(--main-border-color);
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 30px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
               font-size: 30px;
             }
@@ -656,7 +690,7 @@ td {
                 content: '';
                 width: 8px;
                 height: 8px;
-                background: red;
+                background: var(--main-list-style-bg-color);
                 position: absolute;
                 left: 30px;
                 top: 50%;
@@ -677,13 +711,13 @@ td {
           &--title {
             padding-left: 30px;
             padding-right: 10px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid var(--main-border-color);
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 30px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
               font-size: 30px;
             }
@@ -713,13 +747,13 @@ td {
           &--title {
             padding-left: 30px;
             padding-right: 10px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid var(--main-border-color);
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 30px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
               font-size: 30px;
             }
@@ -744,7 +778,7 @@ td {
                 content: '';
                 width: 8px;
                 height: 8px;
-                background: red;
+                background: var(--main-list-style-bg-color);
                 position: absolute;
                 left: 30px;
                 top: 50%;
@@ -757,6 +791,28 @@ td {
           background-color: #fff;
           padding-bottom: 26px;
           position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 59.5%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 6px;
+            border-color: transparent transparent transparent #cd0104;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 40%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 5px 6px 0;
+            border-color: transparent #cd0104 transparent transparent;
+          }
           h2 {
             position: relative;
             color: #cd0104;
@@ -771,8 +827,8 @@ td {
               transform: translateY(-50%);
               display: block;
               width: 40%;
-              height: 1px;
-              background-color: #cd0104;
+              height: 2px;
+              background-color: var(--main-color);
             }
             &::after {
               content: '';
@@ -782,8 +838,8 @@ td {
               transform: translateY(-50%);
               display: block;
               width: 40%;
-              height: 1px;
-              background-color: #cd0104;
+              height: 2px;
+              background-color: var(--main-color);
             }
           }
           // mySwiper
@@ -849,13 +905,13 @@ td {
           &--title {
             padding-left: 30px;
             padding-right: 10px;
-            border-bottom: 1px solid #f10002;
+            border-bottom: 1px solid var(--main-border-color);
             overflow: hidden;
             span {
               float: left;
               display: inline-block;
               padding: 2px 30px;
-              background-color: #f10002;
+              background-color: var(--main-color);
               color: #fff;
               font-size: 30px;
             }
@@ -880,7 +936,7 @@ td {
                 content: '';
                 width: 8px;
                 height: 8px;
-                background: red;
+                background: var(--main-list-style-bg-color);
                 position: absolute;
                 left: 30px;
                 top: 50%;
