@@ -275,40 +275,53 @@
   object-fit: cover;
 }
 
-.main .work-dynamic .work-header {
-  display: flex;
+.main .work-dynamic .layui-tab {
+  margin: 0;
 }
-.main .work-dynamic .work-header .work-header__item {
-  width: 112px;
+.main .work-dynamic .layui-tab .layui-tab-title {
   height: 45px;
   line-height: 45px;
-  cursor: pointer;
-  text-align: center;
-  border: 1px solid #ccc;
+  border: none;
+  padding: 0;
   margin: 42px 0 4px;
+}
+.main .work-dynamic .layui-tab .layui-tab-title li {
+  width: 106px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
+  border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.main .work-dynamic .work-header .work-header__item--active {
+.main .work-dynamic .layui-tab .layui-tab-title li:not(:first-child) {
+  margin-left: 28px;
+}
+.main .work-dynamic .layui-tab .layui-tab-title li.layui-this {
   color: #fff;
   background: #064ec0;
   border-color: rgba(0, 0, 0, 0);
 }
-.main .work-dynamic .work-header .work-header__item:not(:first-child) {
-  margin-left: 29px;
+.main .work-dynamic .layui-tab .layui-tab-title li.layui-this::after {
+  display: none;
 }
-.main .work-dynamic .word-body {
+.main .work-dynamic .layui-tab .layui-tab-content {
+  padding: 24px 0 0;
   margin-bottom: 27px;
+}
+.main .work-dynamic .layui-tab .layui-tab-content .word-body {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main .work-dynamic .word-body .word-body__item {
+.main .work-dynamic .layui-tab .layui-tab-content .word-body .word-body__item {
   width: calc(50% - 14.5px);
-  margin-top: 24px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.main .work-dynamic .layui-tab .layui-tab-content .word-body .word-body__item:nth-child(n + 3) {
+  margin-top: 24px;
 }
 
 .main .reading-master {
@@ -349,43 +362,51 @@
   display: block;
   object-fit: cover;
 }
-
-.main .qjsh-box {
-  margin-bottom: 32px;
+.main .qjsh-box .layui-tab {
+  margin: 0;
 }
-.main .qjsh-box .layui-nav {
-  background: rgba(0, 0, 0, 0);
-  padding: 0;
-  margin: 12px 0 0;
-}
-.main .qjsh-box .layui-nav .layui-nav-item {
+.main .qjsh-box .layui-tab .layui-tab-title {
   line-height: 46px;
-  margin: 0 20px;
+  height: 46px;
+  border: none;
+  margin-top: 28px;
 }
-.main .qjsh-box .layui-nav .layui-nav-item:not(:first-child) {
-  margin-left: 122px;
-}
-.main .qjsh-box .layui-nav .layui-nav-item a {
+.main .qjsh-box .layui-tab .layui-tab-title li {
+  line-height: 46px;
+  height: 46px;
   font-size: 22px;
   font-weight: 700;
   color: #333;
   padding: 0;
 }
-.main .qjsh-box .layui-nav .layui-this:after {
-  background: #064ec0;
-  height: 3px;
+.main .qjsh-box .layui-tab .layui-tab-title li.layui-this {
+  color: #333;
 }
-.main .qjsh-box .qjsh-content {
+.main .qjsh-box .layui-tab .layui-tab-title li.layui-this:after {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #064ec0;
+}
+.main .qjsh-box .layui-tab .layui-tab-title li:not(:first-child) {
+  margin-left: 122px;
+}
+.main .qjsh-box .layui-tab .layui-tab-content {
+  padding: 32px 0 32px;
+}
+.main .qjsh-box .layui-tab .layui-tab-content .qjsh-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 18px;
 }
-.main .qjsh-box .qjsh-content li {
+.main .qjsh-box .layui-tab .layui-tab-content .qjsh-content li {
   width: calc(50% - 60px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.main .qjsh-box .layui-tab .layui-tab-content .qjsh-content li:nth-child(n + 3) {
   margin-top: 24px;
 }
 
@@ -496,13 +517,13 @@
   flex: 1;
   font-size: 24px;
   text-align: center;
-  background-size: contain;
   color: #fff;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .main .rmgw-box .rmgw-content li:nth-child(1) {
   background-image: url('../imgs/rmgw-0.png');
-  background-color: #dd0303;
 }
 .main .rmgw-box .rmgw-content li:nth-child(2) {
   background-image: url('../imgs/rmgw-01.png');
@@ -530,26 +551,52 @@
 .footer .nav-banner {
   width: 1080px;
 }
-.footer .nav-banner .layui-nav {
-  background: rgba(0, 0, 0, 0);
-  padding: 0;
+.footer .nav-banner .layui-tab {
+  width: 1080px;
+  margin: 0;
 }
-.footer .nav-banner .layui-nav .layui-nav-item {
+.footer .nav-banner .layui-tab .layui-tab-title {
   line-height: 46px;
-  margin: 0 32px;
+  height: 46px;
+  border: none;
 }
-.footer .nav-banner .layui-nav .layui-nav-item a {
+.footer .nav-banner .layui-tab .layui-tab-title li {
+  line-height: 46px;
+  height: 46px;
   font-size: 20px;
   font-weight: 700;
   color: #999;
   padding: 0;
 }
-.footer .nav-banner .layui-nav .layui-this a {
+.footer .nav-banner .layui-tab .layui-tab-title li.layui-this {
   color: #333;
 }
-.footer .nav-banner .layui-nav .layui-this:after {
-  background: #b0130f;
-  height: 3px;
+.footer .nav-banner .layui-tab .layui-tab-title li.layui-this:after {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #b0130f;
+}
+.footer .nav-banner .layui-tab .layui-tab-title li:not(:first-child) {
+  margin-left: 69px;
+}
+.footer .nav-banner .layui-tab .layui-tab-content {
+  padding: 28px 0 34px;
+  border-bottom: 1px solid #d9d9d1;
+  box-sizing: border-box;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item {
+  width: 100%;
+  display: flex;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item:not(:first-child) {
+  margin-top: 16px;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item li {
+  width: 25%;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
 }
 .footer .website-statment {
   width: 1080px;
@@ -584,25 +631,6 @@
   height: 63px;
   display: block;
   margin-bottom: 6px;
-}
-.footer .nav-content {
-  width: 1080px;
-  padding: 22px 0 32px;
-  border-bottom: 1px solid #d9d9d1;
-  box-sizing: border-box;
-}
-.footer .nav-content .nav-content-item {
-  width: 100%;
-  display: flex;
-}
-.footer .nav-content .nav-content-item:not(:first-child) {
-  margin-top: 16px;
-}
-.footer .nav-content .nav-content-item li {
-  width: 25%;
-  font-size: 16px;
-  color: #333333;
-  cursor: pointer;
 }
 .aside-banner {
   position: fixed;

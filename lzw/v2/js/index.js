@@ -48,3 +48,8 @@ const khnSwiper_three = initSwiper(
   },
   '.khn-swiper-2'
 )
+
+layui.use('element', function () {
+  var element = layui.element
+  
+})
