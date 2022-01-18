@@ -469,6 +469,7 @@ td {
   }
   .swiper-slide img {
     width: 100%;
+    height: 100%;
   }
   .swiper-slide p {
     width: 100%;
@@ -489,6 +490,7 @@ td {
     white-space: nowrap;
     padding-left: 2px;
     box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 @media screen and (min-width: 959px) {
@@ -550,9 +552,10 @@ td {
   }
   .swiper-slide img {
     width: 100%;
+    height: 100%;
   }
   .swiper-slide p {
-    width: 90%;
+    width: 100%;
     position: absolute;
     bottom: 0px;
     height: 40px;
@@ -571,6 +574,7 @@ td {
     white-space: nowrap;
     padding-left: 10px;
     box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
   }
   .container {
     margin: auto;
@@ -841,7 +845,7 @@ td {
     width: 100%;
   }
   .container section .section__direct .mySwiper .swiper-wrapper .swiper-slide span {
-    width: 96%;
+    width: 100%;
   }
   .container section .section__direct .mySwiper .swiper-wrapper .swiper-slide-active,
   .container section .section__direct .container .main .tips-box .tipsCarousel .swiper-wrapper .swiper-slide-duplicate-active {
