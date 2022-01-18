@@ -158,6 +158,8 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  font-weight: bold;
+  line-height: 30px;
 }
 .main .news-box .news-body .new-content li {
   padding: 13px 0 12px;
@@ -203,6 +205,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  line-height: 28px;
 }
 .main .lnews-box .left-aside .lnews-content .lnews-content__body li {
   font-size: 18px;
