@@ -8,7 +8,7 @@
 
 .fixed-block .top {
     padding: 18px 0 32px 0;
-    background: url('../../imgs/wxb/top_bg.png') no-repeat;
+    background: url('../imgs/top_bg.png') no-repeat;
     background-size: 100% auto;
     color: #fff;
 }
@@ -521,10 +521,10 @@
     width: 100%;
 }
 
-.bottom-banner-container .mySwiper .swiper-wrapper .swiper-slide-active, .container .main .tips-box .tipsCarousel .swiper-wrapper .swiper-slide-duplicate-active {
+/*.bottom-banner-container .mySwiper .swiper-wrapper .swiper-slide-active, .container .main .tips-box .tipsCarousel .swiper-wrapper .swiper-slide-duplicate-active {
     -webkit-transform: scale(1);
     transform: scale(1);
-}
+}*/
 
 .swiper-button-prev1{
     left: 0px;

@@ -156,7 +156,7 @@
 }
 
 .c-icon {
-    background: url(../img/jy_h.png) no-repeat 0 0;
+    background: url(../imgs/jy_h.png) no-repeat 0 0;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -172,7 +172,7 @@
 }
 
 #page .fk_cur .c-icon-bear-p {
-    background: url(../../imgs/wxb/jy_hh.png) no-repeat;
+    background: url(../imgs/jy_hh.png) no-repeat;
 }
 
 #page .n:hover, #page a:hover .pc {

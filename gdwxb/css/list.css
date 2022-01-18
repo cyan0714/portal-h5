@@ -74,13 +74,13 @@
     font-size: 16px;
     font-family: "微软雅黑";
     color: #474747;
-    background: url(../../imgs/wxb/bgNav1227.gif) 40px 24px no-repeat;
+    background: url(../imgs/bgNav1227.gif) 40px 24px no-repeat;
     margin-top: 15px;
     position: relative;
 }
 
 .common-container > .content-box .content-left .tab_tit > ul {
-    background: url(../../imgs/wxb/bgNavBotom1227.gif) 30px 100% no-repeat;
+    background: url(../imgs/bgNavBotom1227.gif) 30px 100% no-repeat;
     padding-left: 60px;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .common-container > .content-box .content-left .tab_tit .select {
-    background: url(../../imgs/wxb/bgNavOn1227.gif) 0 0 no-repeat;
+    background: url(../imgs/bgNavOn1227.gif) 0 0 no-repeat;
     width: 25px;
     height: 20px;
     position: absolute;
