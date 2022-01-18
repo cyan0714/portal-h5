@@ -267,11 +267,12 @@
     line-height: 50px;
     background: rgba(0, 0, 0, .5);
     color: #fff;
+    width: 100%;
 }
 
 .carousel-block p span {
     display: inline-block;
-    width: 40%;
+    width: 560px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -279,6 +280,7 @@
 	box-sizing: border-box;
     /* text-indent: 2em; */
     font-size: 18px;
+
 }
 
 .layui-carousel-ind {
