@@ -244,11 +244,12 @@
   width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   box-sizing: border-box;
   margin: 13px 0 6px;
   padding: 0 6px;
+  font-size: 16px;
 }
 
 .main .lnews-box .right-aside {
@@ -292,6 +293,7 @@
   padding: 0;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  font-size: 18px;
 }
 .main .work-dynamic .layui-tab .layui-tab-title li:not(:first-child) {
   margin-left: 28px;
@@ -482,6 +484,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 16px;
 }
 
 .main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-btn {
