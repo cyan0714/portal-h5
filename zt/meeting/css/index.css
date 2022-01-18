@@ -187,6 +187,9 @@ td {
     padding: 4px 0;
     font-size: 14px;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .container section .section__plan--title {
     padding-left: 10px;
