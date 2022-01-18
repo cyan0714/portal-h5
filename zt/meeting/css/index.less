@@ -621,6 +621,7 @@ td {
       margin-top: 36px;
       .section {
         &__title {
+          height: 126px;
           a {
             position: relative;
             &::before {
@@ -646,6 +647,13 @@ td {
             font-size: 28px;
             letter-spacing: 1px;
             font-weight: bold;
+            display: -webkit-box;
+            word-break: break-all;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; //需要显示的行数
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 94px;
           }
         }
         &__banner {

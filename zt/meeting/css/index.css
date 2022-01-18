@@ -598,6 +598,9 @@ td {
   .container section {
     margin-top: 36px;
   }
+  .container section .section__title {
+    height: 126px;
+  }
   .container section .section__title a {
     position: relative;
   }
@@ -622,6 +625,13 @@ td {
     font-size: 28px;
     letter-spacing: 1px;
     font-weight: bold;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 94px;
   }
   .container section .section__banner > div {
     width: 100%;
