@@ -13,7 +13,7 @@
   padding-top: 6px;
 }
 .header .head-banner {
-  width: 1080px;
+  width: 1100px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +53,7 @@
   transform: translateY(-50%);
 }
 .header .website-title {
-  width: 1080px;
+  width: 1100px;
   height: 83px;
   margin: 29px 0 27px;
   background: url('../imgs/title.png');
@@ -77,6 +77,9 @@
 .header .nav-banner .layui-nav .layui-nav-item {
   line-height: 50px;
 }
+.header .nav-banner .layui-nav .layui-nav-bar{
+  background: #b0130f;
+}
 .header .nav-banner .layui-nav .layui-nav-item a {
   padding: 0 30px;
   font-size: 22px;
@@ -85,7 +88,7 @@
   letter-spacing: 0.5px;
 }
 .main {
-  width: 1080px;
+  width: 1100px;
   flex: 1;
   margin: 29px auto;
 }
@@ -181,14 +184,15 @@
   padding-right: 64px;
   width: 568px;
   box-sizing: border-box;
+  font-family: SimSun;
 }
 .main .lnews-box .left-aside .lnews-content:not(:first-child) {
-  margin-top: 24px;
+  margin-top: 36px;
 }
 .main .lnews-box .left-aside .lnews-content .lnews-content__title {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -199,7 +203,7 @@
   font-size: 18px;
 }
 .main .lnews-box .left-aside .lnews-content .lnews-content__body li:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 24px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -258,12 +262,9 @@
 
 .main .lnews-box .right-aside {
   width: 529px;
-}
-.main .lnews-box .right-aside li:not(:first-child) {
-  margin-top: 26px;
-}
-.main .lnews-box .right-aside li.single-news:first-child{
-  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .lnews-box .right-aside li.single-news img {
   display: block;
@@ -278,8 +279,8 @@
 }
 .main .lnews-box .right-aside li.double-news img {
   display: block;
-  width: 249px;
-  height: 119px;
+  width: calc(50% - 10px);
+  height: 120px;
   object-fit: cover;
 }
 
@@ -559,10 +560,10 @@
   background: #e4f4f8;
 }
 .footer .nav-banner {
-  width: 1080px;
+  width: 1100px;
 }
 .footer .nav-banner .layui-tab {
-  width: 1080px;
+  width: 1100px;
   margin: 0;
 }
 .footer .nav-banner .layui-tab .layui-tab-title {
@@ -609,7 +610,7 @@
   cursor: pointer;
 }
 .footer .website-statment {
-  width: 1080px;
+  width: 1100px;
   display: inline-flex;
   justify-content: space-between;
   margin-top: 23px;
