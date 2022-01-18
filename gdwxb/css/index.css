@@ -530,6 +530,12 @@
 .bottom-banner-container  {
 	padding-bottom: 16px;
 }
+
+.bottom-banner-container .mySwiper .swiper-wrapper .swiper-slide a {
+    height: 100%;
+    width: 100%;
+}
+
 .bottom-banner-container .mySwiper .swiper-wrapper .swiper-slide img {
     height: 100%;
     width: 100%;
