@@ -245,21 +245,24 @@
 							<a>更多>></a>
 						</p>
 					</div>
-					<div class="swiper mySwiper">
-					  <div class="swiper-wrapper">
-					    <div class="swiper-slide">
-							<img src="../imgs/banner7.jpg" />
+					<div class="mySwiper-container">
+						<div class="swiper mySwiper">
+						  <div class="swiper-wrapper">
+						    <div class="swiper-slide">
+								<img src="../imgs/banner7.jpg" />
+							</div>
+						    <div class="swiper-slide">
+								<img src="../imgs/banner8.png" />
+							</div>
+						    <div class="swiper-slide">
+								<img src="../imgs/banner9.jpg" />
+							</div>
+						  </div>
+						  <div class="swiper-pagination"></div>
+							
 						</div>
-					    <div class="swiper-slide">
-							<img src="../imgs/banner8.png" />
-						</div>
-					    <div class="swiper-slide">
-							<img src="../imgs/banner9.jpg" />
-						</div>
-					  </div>
-					  <div class="swiper-pagination"></div>
-					  <div class="swiper-button-prev swiper-button-prev1"></div>
-					      <div class="swiper-button-next swiper-button-next1"></div>
+						<div class="swiper-button-prev swiper-button-prev1"></div>
+						<div class="swiper-button-next swiper-button-next1"></div>
 					</div>
 				</div>
 				<div class="bottom-msg">
@@ -325,7 +328,7 @@
 			  carousel.render({
 			    elem: '#carousel2'
 			    ,width: '100%' //设置容器宽度
-			    ,arrow: 'none' //始终显示箭头
+			    ,arrow: 'always' //始终显示箭头
 			  });
 
 			  carousel.render({
@@ -337,10 +340,10 @@
 			var swiper = new Swiper(".mySwiper", {
 			  slidesPerView: 4,
 			  //centeredSlides: true,
-			  spaceBetween: 10,
-			  /*slidesPerGroup: 3,*/
+			  spaceBetween: 4,
+			  slidesPerGroup: 4,
 			  loop: true,
-			  autoplay: true,
+			  autoplay: false,
 			  /*loopFillGroupWithBlank: true,*/
 			  /*pagination: {
 			  	 el: ".swiper-pagination",
