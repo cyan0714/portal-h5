@@ -8,7 +8,7 @@
 
 .fixed-block .top {
     padding: 18px 0 32px 0;
-    background: url('../imgs/top_bg.png') no-repeat;
+    background: url('../../imgs/wxb/top_bg.png') no-repeat;
     background-size: 100% auto;
     color: #fff;
 }
@@ -142,7 +142,7 @@
 }
 
 .second-title p span {
-    width: 80%;
+    width: 90%;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
@@ -197,7 +197,7 @@
 }
 
 .banner-container .right .banner-item.bold {
-    height: 19%;
+    height: 14.3%;
     font-weight: bold;
     font-size: 18px;
     box-sizing: border-box;
@@ -207,7 +207,7 @@
     display: -webkit-box;
     line-height: 22px;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     font-size: 16px;
 }
@@ -215,7 +215,7 @@
 .banner-container .right .banner-item.bold p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     font-size: 17px;
     line-height: 28px;
@@ -276,7 +276,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     text-indent: 2em;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .layui-carousel-ind {
@@ -340,8 +340,8 @@
 }
 
 .common-cont-block .cont-item .list {
-    min-height: 140px;
-}
+     min-height: 140px;
+ }
 
 .common-cont-block > div:nth-child(2n) {
     margin-right: 0;
@@ -356,7 +356,7 @@
 }
 
 .cont-item .tit-left {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #C20314;
     display: flex;
@@ -414,7 +414,7 @@
 }
 .cont-item .list li {
     width: 94%;
-    font-size: 17px;
+    font-size: 18px;
     padding-bottom: 18px;
     overflow: hidden;
     white-space: nowrap;
@@ -422,7 +422,7 @@
 }
 
 .cont-item .list a {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .cont-item .list li:last-child {
@@ -452,12 +452,13 @@
 }
 
 .bottom-banner-container .bot-tit-left {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #C20314;
     display: flex;
     align-items: center;
     width: 94%;
+    cursor: pointer;
 }
 
 .bottom-banner-container.bot-tit-right {

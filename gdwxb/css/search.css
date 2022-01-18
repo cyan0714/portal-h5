@@ -1,0 +1,187 @@
+
+.search_count {
+    height: 24px;
+    /*background: #fff;*/
+    color: #999;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.search_rmain {
+    line-height: 1.54;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px;
+    word-wrap: break-word;
+    padding-top: 24px;
+    height: 728px;
+    overflow-y: auto;
+    margin-left: 24px;
+}
+.search_rmain .rs_div {
+    position: relative;
+    margin-bottom: 14px;
+}
+/* 设置滚动条的样式 */
+.search_rmain::-webkit-scrollbar {
+    width:4px;
+}
+/* 滚动槽 */
+.search_rmain::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius:0px;
+    background: rgba(0,0,0,0.1);
+}
+/* 滚动条滑块 */
+.search_rmain::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+.search_rmain::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(255,0,0,0.4);
+}
+.search_rmain .rs_div .h_title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.54;
+    margin-bottom: 1px;
+    /*color: #333;*/
+    padding: 0;
+    list-style: none;
+}
+
+.search_rmain .rs_div .h_title a {
+    font-size: 18px;
+}
+
+.search_rmain .rs_div h3 a.a1:link {
+    color: #0000cc;
+    text-decoration: underline;
+}
+
+.search_rmain .rs_div h3 a.a1:visited {
+    color: #606;
+}
+
+.lis_ssner {
+    font-size: 16px;
+    word-break: break-all;
+    color: #333;
+}
+
+.lis_ssly {
+    color: #0d9003;
+    font-size: 16px;
+}
+
+.dl-content-page {
+    margin-top: 30px;
+    line-height: normal;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#page a, #page strong {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 66px;
+    text-align: center;
+    line-height: 34px;
+    text-decoration: none;
+    overflow: hidden;
+    margin-right: 9px;
+    background: #fff
+}
+
+#page a {
+    cursor: pointer;
+    color: #0000cc;
+}
+
+#page a:hover {
+    background: 0 0
+}
+
+#page .n:hover, #page a:hover .pc {
+    background: #f2f8ff;
+    border: 1px solid #38f
+}
+
+#page .n {
+    height: 34px;
+    padding: 0 18px;
+    border: 1px solid #e1e2e3
+}
+
+#page span {
+    display: block
+}
+
+#page .pc {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e1e2e3;
+    cursor: pointer
+}
+
+#page .fk {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    cursor: pointer
+}
+
+#page strong .fk, #page strong .pc {
+    cursor: auto
+}
+
+#page strong .pc {
+    border: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px
+}
+
+#page .nums {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px
+}
+
+.c-icon {
+    background: url(../img/jy_h.png) no-repeat 0 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-bottom;
+    font-style: normal;
+    overflow: hidden
+}
+
+#page .fk .c-icon-bear-pn, .c-icon-bear-p {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+#page .fk_cur .c-icon-bear-p {
+    background: url(../../imgs/wxb/jy_hh.png) no-repeat;
+}
+
+#page .n:hover, #page a:hover .pc {
+    background: #f2f8ff;
+    border: 1px solid #38f
+}
+
+#page .n {
+    height: 34px;
+    padding: 0 18px;
+    border: 1px solid #e1e2e3
+}
