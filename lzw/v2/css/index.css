@@ -12,90 +12,6 @@
   align-items: center;
   padding-top: 6px;
 }
-.header .head-banner {
-  width: 1100px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .head-banner .website {
-  display: inline-flex;
-}
-.header .head-banner .website li {
-  position: relative;
-  cursor: pointer;
-  font-size: 16px;
-}
-.header .head-banner .website li:not(:first-child) {
-  margin-left: 14px;
-}
-.header .head-banner .website li:not(:first-child)::before {
-  content: '';
-  width: 1px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-8px, calc(-50% + 1px));
-  background: #1d1d1f;
-}
-.header .head-banner .search {
-  width: 200px;
-  height: 30px;
-  position: relative;
-}
-.header .head-banner .search .layui-input {
-  height: inherit;
-}
-.header .head-banner .search .search__icon {
-  position: absolute;
-  right: 11px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.header .website-title {
-  width: 1100px;
-  height: 83px;
-  margin: 29px 0 27px;
-  background: url('../imgs/title.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header .nav-banner {
-  width: 100%;
-  height: 50px;
-  background: #064ec0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header .nav-banner .layui-nav {
-  width: 1100px;
-  height: 100%;
-  padding: 0;
-  display: inline-flex;
-  justify-content: space-between;
-  border-radius: 0;
-  color: #fff;
-  background: rgba(0, 0, 0, 0);
-}
-.header .nav-banner .layui-nav .layui-nav-item {
-  line-height: 50px;
-}
-.header .nav-banner .layui-nav .layui-nav-bar {
-  background: #b0130f;
-}
-.header .nav-banner .layui-nav .layui-nav-item a {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.5px;
-  padding: 0;
-}
-.header .nav-banner .layui-nav .layui-nav-item.layui-this::after {
-  background: #b0130f;
-}
-
 .main {
   width: 1100px;
   flex: 1;
@@ -171,6 +87,7 @@
   text-overflow: ellipsis;
   position: relative;
   padding-left: 15px;
+  cursor: pointer;
 }
 .main .news-box .news-body .new-content li::before {
   content: '';

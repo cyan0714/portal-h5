@@ -1,0 +1,49 @@
+.header .head-banner {
+    width: 1100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .head-banner .website {
+    display: inline-flex;
+}
+.header .head-banner .website li {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+.header .head-banner .website li:not(:first-child) {
+    margin-left: 14px;
+}
+.header .head-banner .website li:not(:first-child)::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-8px, calc(-50% + 1px));
+    background: #1d1d1f;
+}
+.header .head-banner .search {
+    width: 200px;
+    height: 30px;
+    position: relative;
+}
+.header .head-banner .search .layui-input {
+    height: inherit;
+}
+.header .head-banner .search .search__icon {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header .website-title {
+    width: 1100px;
+    height: 83px;
+    margin: 29px 0 27px;
+    background: url('../imgs/title.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

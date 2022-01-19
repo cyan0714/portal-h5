@@ -1,0 +1,34 @@
+.header .nav-banner {
+    width: 100%;
+    height: 50px;
+    background: #064ec0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav-banner .layui-nav {
+    width: 1100px;
+    height: 100%;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    border-radius: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+}
+.header .nav-banner .layui-nav .layui-nav-item {
+    line-height: 50px;
+}
+.header .nav-banner .layui-nav .layui-nav-bar {
+    background: #b0130f;
+}
+.header .nav-banner .layui-nav .layui-nav-item a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 0;
+}
+.header .nav-banner .layui-nav .layui-nav-item.layui-this::after {
+    background: #b0130f;
+}
