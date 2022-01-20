@@ -42,11 +42,11 @@ layui.use('element', function () {
   var element = layui.element
 
   const addMouseOver = tabClassName => {
-    const _title = document.querySelector(`${tabClassName} .layui-tab-title`)
-    const _content = document.querySelector(`${tabClassName} .layui-tab-content`)
-    _title.addEventListener('mouseover', e => {
+    const _title = document.querySelector(tabClassName+ ' ' + '.layui-tab-title')
+    const _content = document.querySelector(tabClassName + ' ' + '.layui-tab-content')
+    _title.addEventListener('mouseover', function(e) {
       if (e.target.tagName === 'LI') {
-        ;[..._title.children].forEach((el, index) => {
+        Array.prototype.forEach.call(_title.children, function(el, index){
           const _classList = el.classList
           _content.children[index].classList.remove('layui-show')
           if (_classList.contains('layui-this')) {
