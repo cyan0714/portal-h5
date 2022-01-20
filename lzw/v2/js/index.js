@@ -40,5 +40,28 @@ var  khnSwiper_three = new Swiper(".khn-swiper-2", {
 })
 layui.use('element', function () {
   var element = layui.element
-  
+
+  const addMouseOver = tabClassName => {
+    const _title = document.querySelector(`${tabClassName} .layui-tab-title`)
+    const _content = document.querySelector(`${tabClassName} .layui-tab-content`)
+    _title.addEventListener('mouseover', e => {
+      if (e.target.tagName === 'LI') {
+        ;[..._title.children].forEach((el, index) => {
+          const _classList = el.classList
+          _content.children[index].classList.remove('layui-show')
+          if (_classList.contains('layui-this')) {
+            _classList.remove('layui-this')
+          }
+          if (el === e.target) {
+            e.target.classList.add('layui-this')
+            _content.children[index].classList.add('layui-show')
+          }
+        })
+      }
+    })
+  }
+
+  addMouseOver('.work-dynamic .layui-tab')
+  addMouseOver('.qjsh-box .layui-tab')
+  addMouseOver('.footer .layui-tab')
 })
