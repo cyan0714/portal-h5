@@ -1,0 +1,100 @@
+.lzw-detail-content-wrap .jbbg {
+  background: url(../imgs/jbbg.png) no-repeat;
+  background-size: cover;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lzw-detail-content-wrap .jbbg .jbcx {
+  background: url("../imgs/tbbj.png") no-repeat;
+  background-size: cover;
+  width: 232px;
+  height: 98px;
+  margin-right: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lzw-detail-content-wrap .jbbg .jbcx .jbfs-search {
+  background: url("../imgs/jbcx.png") no-repeat;
+  background-size: cover;
+  width: 38px;
+  height: 34px;
+  margin-right: 10px;
+}
+.lzw-detail-content-wrap .jbbg .jbcx .title a {
+  font-size: 28px;
+  color: #fff;
+}
+.lzw-detail-content-wrap .jbbg .jbcx .wyjb-add {
+  background: url("../imgs/jbed.png") no-repeat;
+  background-size: cover;
+  width: 38px;
+  height: 34px;
+  margin-right: 10px;
+}
+.lzw-detail-content-wrap .list {
+  margin-top: 42px;
+}
+.lzw-detail-content-wrap .list .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lzw-detail-content-wrap .list .title p {
+  display: flex;
+  align-items: center;
+}
+.lzw-detail-content-wrap .list .title p a {
+  color: #064ec0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 18px 0 12px;
+}
+.lzw-detail-content-wrap .list .title p i {
+  display: inline-block;
+  height: 20px;
+  width: 8px;
+  background-color: #064ec0;
+  margin-top: 2px;
+}
+.lzw-detail-content-wrap .list .title .fg {
+  display: inline-block;
+  height: 2px;
+  width: 842px;
+  background-color: #ECEEEF;
+  border-radius: 1px;
+}
+.lzw-detail-content-wrap .list .title .more {
+  margin-left: 16px;
+}
+.lzw-detail-content-wrap .list .list-all .lzw-info-list-item {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.lzw-detail-content-wrap .list .list-all .lzw-info-list-item .lzw-info-list-item-info {
+  font-size: 16px;
+}
+.lzw-detail-content-wrap .list .list-all .lzw-info-list-item .lzw-info-list-item-info .lzw-info-list-item-dot {
+  color: #999;
+}
+.lzw-detail-content-wrap .list .list-all .lzw-info-list-item .lzw-info-list-item-info .text-ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  width: 850px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.lzw-detail-content-wrap .list .list-all .lzw-info-list-item .lzw-info-list-item-info .lzw-info-list-item-date {
+  color: #999;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-right: 20px;
+  float: right;
+}
+/*# sourceMappingURL=jdjb.css.map */

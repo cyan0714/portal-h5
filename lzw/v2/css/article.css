@@ -1,0 +1,74 @@
+.lzw-crumbs {
+    color: #333;
+    margin: 0 auto;
+    width: 1140px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    padding: 12px;
+    width: calc(100% - 24px);
+}
+
+.lzw-detail-content-wrap {
+    padding: 20px;
+    font-family: '宋体', Tahoma, Arial;
+    font-size: 18px;
+}
+.lzw-detail-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 10px 30px;
+}
+.lzw-detail-info {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ccc;
+}
+.lzw-detail-info-key {
+    margin-left: 12px;
+}
+.lzw-detail-content {
+    font-size: 18px;
+    font-family: '宋体', Tahoma, Arial;
+    line-height: 2em;
+    padding: 10px 60px;
+}
+.lzw-detail-content p {
+    margin: 5px 0;
+}
+.lzw-detail-video {
+    font-size: 18px;
+    font-family: '宋体', Tahoma, Arial;
+    line-height: 2em;
+    padding: 10px 60px;
+}
+
+/*<editor-fold desc="分享至：QQ、微信、微博">*/
+.share-to button {
+    padding: 5px;
+}
+.share {
+    display: none;
+}
+.share span>img {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.qrcode-block {
+    display: none;
+}
+.qrcode-block h4 {
+    margin-left: 10px;
+}
+.qrcode-block div {
+    padding: 5px 20px;
+}
+.qrcode-block p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+/*</editor-fold>*/

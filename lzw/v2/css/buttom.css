@@ -1,0 +1,100 @@
+.footer {
+    width: 100%;
+    min-height: 340px;
+    padding: 8px 0 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: #e4f4f8;
+}
+.footer .nav-banner {
+    width: 1100px;
+}
+.footer .nav-banner .layui-tab {
+    width: 1100px;
+    margin: 0;
+}
+.footer .nav-banner .layui-tab .layui-tab-title {
+    line-height: 46px;
+    height: 46px;
+    border: none;
+}
+.footer .nav-banner .layui-tab .layui-tab-title li {
+    line-height: 46px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #999;
+    padding: 0;
+}
+.footer .nav-banner .layui-tab .layui-tab-title li.layui-this {
+    color: #333;
+}
+.footer .nav-banner .layui-tab .layui-tab-title li.layui-this:after {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #b0130f;
+}
+.footer .nav-banner .layui-tab .layui-tab-title li:not(:first-child) {
+    margin-left: 69px;
+}
+.footer .nav-banner .layui-tab .layui-tab-content {
+    padding: 28px 0 34px;
+    border-bottom: 1px solid #d9d9d1;
+    box-sizing: border-box;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item:not(:first-child) {
+    margin-top: 16px;
+}
+.footer .nav-banner .layui-tab .layui-tab-content .layui-tab-item .tab-content-item li {
+    width: 200px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    height: 18px;
+    margin-bottom: 16px;
+}
+
+
+.footer .website-statment {
+    width: 1100px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+.footer .website-statment .website-content {
+    display: inherit;
+    margin: 0;
+}
+.footer .website-statment .website-content img {
+    display: block;
+    width: 57px;
+    height: 72px;
+    margin-right: 23px;
+}
+.footer .website-statment .website-content ul {
+    height: 76px;
+    line-height: 23px;
+    font-size: 16px;
+}
+.footer .website-statment .website-content ul li:last-child {
+    cursor: pointer;
+}
+.footer .website-statment .website-qrcode {
+    margin: 0;
+    text-align: center;
+}
+.footer .website-statment .website-qrcode img {
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin-bottom: 6px;
+}

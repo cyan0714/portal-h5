@@ -37,6 +37,7 @@
     right: 11px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .header .website-title {
     width: 1100px;

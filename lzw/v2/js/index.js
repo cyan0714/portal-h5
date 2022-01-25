@@ -38,6 +38,18 @@ var  khnSwiper_three = new Swiper(".khn-swiper-2", {
         prevEl: '#khn-previous-btn'
     }
 })
+
+var  khnSwiper_4 = new Swiper(".khn-swiper-4", {
+    autoplay: {
+        disableOnInteraction: false
+    },
+    loop: true,
+    navigation: {
+        nextEl: '#khn-next-btn',
+        prevEl: '#khn-previous-btn'
+    }
+})
+
 layui.use('element', function () {
   var element = layui.element
 
