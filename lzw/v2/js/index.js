@@ -10,6 +10,8 @@ var  khnSwiper_one = new Swiper(".khn-swiper-0", {
     autoplay: {
         disableOnInteraction: false
     },
+    slidesPerView: 3,
+    spaceBetween: 12,
     loop: true,
     navigation: {
         nextEl: '#khn-next-btn',
@@ -17,27 +19,7 @@ var  khnSwiper_one = new Swiper(".khn-swiper-0", {
     }
 })
 
-var  khnSwiper_two = new Swiper(".khn-swiper-1", {
-    autoplay: {
-        disableOnInteraction: false
-    },
-    loop: true,
-    navigation: {
-        nextEl: '#khn-next-btn',
-        prevEl: '#khn-previous-btn'
-    }
-})
 
-var  khnSwiper_three = new Swiper(".khn-swiper-2", {
-    autoplay: {
-        disableOnInteraction: false
-    },
-    loop: true,
-    navigation: {
-        nextEl: '#khn-next-btn',
-        prevEl: '#khn-previous-btn'
-    }
-})
 
 var  khnSwiper_4 = new Swiper(".khn-swiper-4", {
     autoplay: {

@@ -387,25 +387,34 @@
   padding: 12px 36px;
 }
 .main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-item {
-  width: calc((100% - 36px) / 3);
+  width: 100%;
   text-align: center;
   box-sizing: border-box;
   padding: 6px 0 12px;
   display: flex;
   flex-direction: column;
 }
-.main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-item h2 {
+.main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-item .swiper-slide{
+  display: flex;
+  flex-direction: column;
+}
+.main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-item .rotaion-item-title {
   font-size: 24px;
   font-weight: 700;
   color: #333;
   cursor: pointer;
 }
+.main .khn-box .khn-content .khn-rotaion-box .khn-rotaion-item .rotaion-item-content{
+  flex: 1;
+  margin: 10px 0 12px;
+  background: #fff;
+}
+
 .main .khn-box .khn-content .khn-rotaion-box .khn-swiper {
   width: 100%;
   flex: 1;
-  margin-top: 10px;
-  background: #fff;
   cursor: pointer;
+  
 }
 .main .khn-box .khn-content .khn-rotaion-box .khn-swiper img {
   width: calc(100% - 12px);
