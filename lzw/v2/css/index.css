@@ -414,12 +414,6 @@
   width: 100%;
   flex: 1;
   cursor: pointer;
-  
-}
-.main .khn-box .khn-content .khn-rotaion-box .khn-swiper img {
-  width: calc(100% - 12px);
-  margin: 6px 0 10px;
-  height: 158px;
 }
 .main .khn-box .khn-content .khn-rotaion-box .khn-swiper p {
   padding: 0 1.6em;

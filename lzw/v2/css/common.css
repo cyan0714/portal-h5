@@ -4,7 +4,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: '宋体';
+    font-family: 'Microsoft YaHei';
 }
 .header {
     display: flex;

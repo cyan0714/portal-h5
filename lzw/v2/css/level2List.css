@@ -33,3 +33,41 @@
     margin-right: 24px;
 
 }
+.list-top .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list-top .title p {
+    display: flex;
+    align-items: center;
+}
+.list-top .title p i {
+    display: inline-block;
+    height: 20px;
+    width: 8px;
+    background-color: #064ec0;
+    margin-top: 2px;
+}
+.list-top .title p a {
+    color: #064ec0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 18px 0 12px;
+    width: auto;
+    max-width: 580px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.list-top .title .fg {
+    display: inline-block;
+    height: 4px;
+    background-color: #ECEEEF;
+    border-radius: 1px;
+}
+.list-top .title .more {
+    margin: 0 40px 0px 18px;
+    width: auto;
+
+}
