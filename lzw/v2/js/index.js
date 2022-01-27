@@ -7,9 +7,8 @@ layui.use('element', function () {
     autoplayDisableOnInteraction: false,
     pagination: '#news-swiper-pagination',
     paginationClickable: true,
-    paginationBulletRender: function (swiper, index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>'
-    }
+    nextButton: '#news-next-btn',
+    prevButton: '#news-previous-btn'
   })
 
   new Swiper('.khn-swiper-0', {

@@ -35,6 +35,43 @@
 .main .news-box .news-rotaion {
   width: 606px;
   height: 332px;
+  position: relative;
+}
+.main .news-box .news-rotaion .swiper-pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .news-box .news-rotaion .swiper-pagination .swiper-pagination-bullet {
+  width: 42px;
+  height: 6px;
+  border-radius: 0;
+  opacity: 1;
+  background: #83817f;
+}
+.main .news-box .news-rotaion .swiper-pagination .swiper-pagination-bullet-active {
+  background: #d6181f;
+}
+.main .news-box .news-rotaion .news-rotaion-btn {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .news-box .news-rotaion .news-rotaion-btn p img {
+  width: 17px;
+  height: 32px;
+  display: block;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 100;
+}
+.main .news-box .news-rotaion .news-rotaion-btn p img.next {
+  transform: rotate(180deg);
 }
 .main .news-box .news-rotaion img {
   display: block;
@@ -492,14 +529,6 @@
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  color: #000;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination-bullet-active {
