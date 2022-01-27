@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>廉政网首页</title>
     <link rel="stylesheet" href="../../../lib/layui/css/layui.css"/>
-    <link rel="stylesheet" href="../../../lib/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../../lib/Swiper-3.4.2/dist/css/swiper.min.css"/>
     <link rel="stylesheet" href="../css/common.css"/>
     <link rel="stylesheet" href="../css/head.css"/>
     <link rel="stylesheet" href="../css/daohang.css"/>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="contaier">
-    <header class="header">
+    <div class="header">
         <div class="head-banner">
             <ul class="website">
                 <li>设为首页</li>
@@ -53,10 +53,10 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main class="main">
+    </div>
+    <div class="main">
         <div class="news-box">
-            <div class="swiper news-rotaion">
+            <div class="swiper-container news-rotaion">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#"><img src="../imgs/news.png" alt=""/></a>
@@ -72,6 +72,7 @@
                                 alt=""/></a>
                     </div>
                 </div>
+                <div class="swiper-pagination" id="news-swiper-pagination"></div>
             </div>
             <div class="news-body">
                 <h2 class="news-title">十九届中央纪委第六次全体会议明年1月18日 至20日召开</h2>
@@ -265,7 +266,7 @@
                 </div>
                 <div class="khn-rotaion-box">
                     <section class="khn-rotaion-item">
-                        <div class="khn-swiper swiper khn-swiper-0">
+                        <div class="khn-swiper swiper-container khn-swiper-0" data-swiper-autoplay="5000">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                   <h2 class="rotaion-item-title">动漫</h2>
@@ -318,8 +319,8 @@
                 </ul>
             </ul>
         </div>
-    </main>
-    <footer class="footer">
+    </div>
+    <div class="footer">
         <div class="nav-banner">
             <div class="layui-tab layui-tab-brief">
                 <ul class="layui-tab-title">
@@ -379,13 +380,13 @@
                 <p>官方微信</p>
             </figure>
         </section>
-    </footer>
+    </div>
     <section class="aside-banner">
         <img src="../imgs/banner.png" alt=""/>
     </section>
 </div>
 <script src="../../../lib/layui/layui.js"></script>
-<script src="../../../lib/swiper/swiper-bundle.min.js"></script>
+<script src="../../../lib/Swiper-3.4.2/dist/js/swiper.min.js"></script>
 <script src="../js/index.js"></script>
 </body>
 </html>

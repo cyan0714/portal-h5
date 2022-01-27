@@ -1,47 +1,34 @@
-var  newsSwiper = new Swiper(".news-rotaion", {
-    autoplay: {
-        disableOnInteraction: false
-    },
-    loop: true
-})
-
-
-var  khnSwiper_one = new Swiper(".khn-swiper-0", {
-    autoplay: {
-        disableOnInteraction: false
-    },
-    slidesPerView: 3,
-    spaceBetween: 12,
-    loop: true,
-    navigation: {
-        nextEl: '#khn-next-btn',
-        prevEl: '#khn-previous-btn'
-    }
-})
-
-
-
-var  khnSwiper_4 = new Swiper(".khn-swiper-4", {
-    autoplay: {
-        disableOnInteraction: false
-    },
-    loop: true,
-    navigation: {
-        nextEl: '#khn-next-btn',
-        prevEl: '#khn-previous-btn'
-    }
-})
-
 layui.use('element', function () {
   var element = layui.element
 
-  const addMouseOver = tabClassName => {
-    const _title = document.querySelector(tabClassName+ ' ' + '.layui-tab-title')
-    const _content = document.querySelector(tabClassName + ' ' + '.layui-tab-content')
-    _title.addEventListener('mouseover', function(e) {
+  new Swiper('.news-rotaion', {
+    autoplay: 3000,
+    loop: true,
+    autoplayDisableOnInteraction: false,
+    pagination: '#news-swiper-pagination',
+    paginationClickable: true,
+    paginationBulletRender: function (swiper, index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>'
+    }
+  })
+
+  new Swiper('.khn-swiper-0', {
+    autoplay: 3000,
+    slidesPerView: 3,
+    spaceBetween: 12,
+    loop: true,
+    autoplayDisableOnInteraction: false,
+    nextButton: '#khn-next-btn',
+    prevButton: '#khn-previous-btn'
+  })
+
+  function addMouseOver(tabClassName) {
+    var _title = document.querySelector(tabClassName + ' ' + '.layui-tab-title')
+    var _content = document.querySelector(tabClassName + ' ' + '.layui-tab-content')
+    _title.addEventListener('mouseover', function (e) {
       if (e.target.tagName === 'LI') {
-        Array.prototype.forEach.call(_title.children, function(el, index){
-          const _classList = el.classList
+        Array.prototype.forEach.call(_title.children, function (el, index) {
+          var _classList = el.classList
           _content.children[index].classList.remove('layui-show')
           if (_classList.contains('layui-this')) {
             _classList.remove('layui-this')

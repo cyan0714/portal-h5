@@ -21,7 +21,7 @@
     height: 16px;
     position: absolute;
     top: 50%;
-    transform: translate(-8px, calc(-50% + 1px));
+    transform: translate(-8px, -50%);
     background: #1d1d1f;
 }
 .header .head-banner .search {

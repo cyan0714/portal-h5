@@ -2,8 +2,6 @@
     width: 100%;
     min-width: 1300px;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-family: 'Microsoft YaHei';
 }
 .header {
@@ -14,8 +12,7 @@
 }
 .main {
     width: 1100px;
-    flex: 1;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .white-bg{
     background: #fff;
