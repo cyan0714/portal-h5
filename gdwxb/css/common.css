@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 18px;
+
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +30,11 @@ div {
 }
 
 .top-container {
-    background: #F4F4F4;
+    /*background: #F4F4F4;*/
+    background: url(../imgs/head.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 452px;
 }
 
 .time-right span {
@@ -44,25 +49,32 @@ div {
 .title-block {
     display: flex;
     box-sizing: border-box;
-    border-bottom: 4px solid #C20314;
+   /* border-bottom: 4px solid #C20314;*/
+  /*  align-items: center;*/
+    height: 100%;
+    justify-content: center;
+
 }
 
 .title-flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .layui-carousel.title-left {
-    width: 70% !important;
-    height: 120px !important;
+    width: 100% !important;
+    height: 264px !important;
     box-sizing: border-box;
+    background-color: transparent;
 }
 
 .layui-carousel > [carousel-item] > * {
-    background: #F4F4F4 !important;
+    /*background: #F4F4F4 !important;*/
     padding: 0 20px;
     box-sizing: border-box;
+    background-color: transparent;
 }
 
 .layui-carousel.title-left > [carousel-item] p {
@@ -73,38 +85,48 @@ div {
 }
 
 .search-box {
-    width: 242px;
     display: flex;
-    border: 1px solid #E0DDDD;
+    /*border: 1px solid #E0DDDD;*/
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 32px;
+    height: 48px;
 }
 
 .search-box span {
     display: inline-block;
-    height: 34px;
-    line-height: 34px;
-    width: 70px;
+    line-height: 48px;
+    width: 96px;
     text-align: center;
-    background: #DBD8D8;
-    font-size: 15px;
+   /* background: #a41c04;*/
+   background-color: rgba(164,28,4,0.6);
+   /* background: url("../imgs/searchTitlebg.jpg") no-repeat;*/
+    font-size: 24px;
+    color: #fff;
+    padding-right: 12px;
+    background-size: 100% 100%;
+
 }
 
+.search-box span img{
+    margin: 0 6px;
+
+}
 .search-box span:hover {
     cursor: pointer;
     opacity: .9;
 }
 
 .search-box input {
-    height: 34px;
     display: block;
-    width: calc(100% - 70px);
+    width: 400px;
     border: 0 none;
     padding-left: 6px;
+    background-color: rgba(251,251,251,0.6);
 }
 
 .main-container {
     position: relative;
+    font-family:"Microsoft YaHei",微软雅黑;
 }
 
 /**顶部导航 start*/
