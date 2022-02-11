@@ -49,11 +49,11 @@ div {
 .title-block {
     display: flex;
     box-sizing: border-box;
-   /* border-bottom: 4px solid #C20314;*/
-  /*  align-items: center;*/
+    /* border-bottom: 4px solid #C20314; */
+    /* align-items: center; */
     height: 100%;
-    justify-content: center;
-
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .title-flex {

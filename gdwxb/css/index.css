@@ -1,18 +1,18 @@
 
-.wxb-container .title-block .common-container .top-daohang{
+.wxb-container .title-block  .top-daohang{
     background-color: rgba(137, 4, 8, .6);
     height: 72px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top:24px;
 }
 
-.wxb-container .title-block .common-container .top-daohang .nav-item{
+.wxb-container .title-block  .top-daohang .nav-item{
 
 }
 
-.wxb-container .title-block .common-container .top-daohang .nav-item a{
+.wxb-container .title-block .top-daohang .nav-item a{
     color: #fff;
     font-size: 24px;
     line-height: 72px;
@@ -20,7 +20,7 @@
     display: block;
 }
 
-.wxb-container .title-block .common-container .top-daohang .nav-item a:hover{
+.wxb-container .title-block  .top-daohang .nav-item a:hover{
    background: #841006;
 }
 
@@ -408,7 +408,7 @@
      display: flex;
      align-items: center;
      margin-bottom: 16px;
-     height:48px;
+    /* height:48px;*/
      line-height: 48px;
      vertical-align: middle;
      justify-content: flex-end;
@@ -446,11 +446,11 @@
 }
 
 .cont-item-block-2 .cont-item-block-2-content-left .list {
-    min-height: 140px;
+    min-height: 210px;
+    width: calc(100% - 170px);
 }
 
 .cont-item-block-2 .cont-item-block-2-content-left .list li {
-    width: 53%;
     font-size: 18px;
     padding-bottom: 18px;
     overflow: hidden;
