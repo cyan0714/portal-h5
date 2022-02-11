@@ -721,6 +721,7 @@
     width: 577px;
     height: 336px;
     margin: 0 auto;
+    cursor: pointer;
 }
 .swiper-container-1 {
     /*width: 697px;*/
@@ -737,6 +738,7 @@
 .swiper-container-2 img,.swiper-container-3 img {
     width: 100%;
     height: 168px;
+    cursor: pointer;
 }
 .swiper-container-1 .el-carousel-block {
     height: 336px;
@@ -762,14 +764,19 @@
     margin-top: 24px;
     padding-bottom: 18px;
     font-weight: bold;
+    cursor: pointer;
 }
 .text-container p {
     text-align: right;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 18px;
+}
+.text-container p:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 .text-container p a {
-   font-size: 18px;
+    font-size: 18px;
 }
 .text-container p a:hover {
     cursor: pointer;
