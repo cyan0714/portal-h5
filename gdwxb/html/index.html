@@ -5,8 +5,8 @@
 		<title></title>
 		<link rel="stylesheet" href="../../lib/layui/css/layui.css">
 		<link rel="stylesheet" href="../css/swiper.min.css"/>
-		<link rel="stylesheet" href="../css/index.css">
 		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/index.css">
 	</head>
 	<body>
 		<div class="wxb-container">
@@ -416,7 +416,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="el-carousel-block">
-                                                <img src="./imgs/6.jpg" />
+                                                <img src="../imgs/6.jpg" />
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -431,7 +431,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="el-carousel-block">
-                                                <img src="./imgs/1.png" />
+                                                <img src="../imgs/1.png" />
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -451,42 +451,43 @@
 						<p>广东省互联网信息办公室</p>
 					</div>
 				</div>
-				<div class="fixed-block" id="todo-block">
-					<div class="block-1">
-						<div class="top">
-							<p>网信办管理员</p>
-							<p>中共广东省委网络安全和信息化委员会办公室</p>
+			</div>
+			
+			<div class="fixed-block" id="todo-block">
+				<div class="block-1">
+					<div class="top">
+						<p>网信办管理员</p>
+						<p>中共广东省委网络安全和信息化委员会办公室</p>
+					</div>
+					<div class="bot">
+						<div class="item-block">
+							<p><img src="../imgs/icon_gw.png" /><span>待办公文</span></p>
+							<span class="num">20</span>
 						</div>
-						<div class="bot">
-							<div class="item-block">
-								<p><img src="../imgs/icon_gw.png" /><span>待办公文</span></p>
-								<span class="num">20</span>
-							</div>
-							<div class="item-block">
-								<p><img src="../imgs/icon_sp.png" /><span>待办审批</span></p>
-								<span class="num">20</span>
-							</div>
-							<div class="item-block">
-								<p><img src="../imgs//icon_hy.png" /><span>待开会议</span></p>
-								<span class="num">20</span>
-							</div>
-							<div class="item-block">
-								<p><img src="../imgs/icon_email.png" /><span>未读邮件</span></p>
-								<span class="num">20</span>
-							</div>
+						<div class="item-block">
+							<p><img src="../imgs/icon_sp.png" /><span>待办审批</span></p>
+							<span class="num">20</span>
+						</div>
+						<div class="item-block">
+							<p><img src="../imgs//icon_hy.png" /><span>待开会议</span></p>
+							<span class="num">20</span>
+						</div>
+						<div class="item-block">
+							<p><img src="../imgs/icon_email.png" /><span>未读邮件</span></p>
+							<span class="num">20</span>
 						</div>
 					</div>
-					<div class="block-2">
-						<p class="common-title"><i></i><span>系统导航</span></p>
-						<div class="item-block-2">
-							<img src="../imgs/icon_OA.png" /><a>OA办公系统</a>
-						</div>
-						<div class="item-block-2">
-							<img src="../imgs/icon_gd.png" /><a>电子公文归档系统</a>
-						</div>
-						<div class="item-block-2">
-							<img src="../imgs/icon_rs.png" /><a>干部人事档案系统</a>
-						</div>
+				</div>
+				<div class="block-2">
+					<p class="common-title"><i></i><span>系统导航</span></p>
+					<div class="item-block-2">
+						<img src="../imgs/icon_OA.png" /><a>OA办公系统</a>
+					</div>
+					<div class="item-block-2">
+						<img src="../imgs/icon_gd.png" /><a>电子公文归档系统</a>
+					</div>
+					<div class="item-block-2">
+						<img src="../imgs/icon_rs.png" /><a>干部人事档案系统</a>
 					</div>
 				</div>
 			</div>
@@ -537,12 +538,12 @@
 			  },
 			});*/
             var galleryThumbs1 = new Swiper('.swiper-container-2', {
-                //loop: true,
+                loop: true,
                 allowTouchMove: false //关闭拖动
             });
             var galleryThumbs2 = new Swiper('.swiper-container-3', {
                 direction: 'vertical',
-               // loop: true,
+               loop: true,
                 controller: {
                     control: galleryThumbs1
                 },

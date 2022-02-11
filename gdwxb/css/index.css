@@ -25,9 +25,9 @@
 }
 
 .fixed-block {
-    position: fixed;
+    position: absolute;
     right: 3%;
-    top: 42%;
+    top: 63.2%;
     width: 258px;
     min-height: 200px;
 }
@@ -484,6 +484,8 @@
 
 .cont-item-block-2 .title .tab:hover {
     background-color: #4984e6;
+	color: #fff;
+	cursor: pointer;
 }
 
 .cont-item .tit-left {
@@ -807,3 +809,66 @@
     width: 100%;
     transform: scale(1.2);
 }*/
+
+@media screen and (max-width: 1600px) {
+	.common-container {
+		width: 1200px;
+	}
+	.main-container .common-container {
+		width: 980px;
+		margin-left: 254px;
+	}
+	.fixed-block {
+		top: 78%;
+		right: 5%;
+	}
+	.cont-item-block-2 .cont-item-block-2-content-left .list li {
+		width: 39%;
+	}
+	.swiper-container-1 .el-carousel-block img {
+	    width: 397px;
+		margin-left: 0;
+	}
+	.swiper-container-left {
+	    width: 720px;
+	    height: 100%;
+	    display: flex;
+	}
+	.swiper-container-right {
+	    width: calc(100% - 720px);
+	    height: 100%;
+	}
+	.carousel-block p span {
+		width: 480px;
+	}
+	.banner-container .right .banner-item.bold p {
+		font-size: 20px;
+	}
+	.banner-container .right .banner-item p {
+		font-size: 20px;
+	}
+	.swiper-container-box .swiper-container-left .swiper-container-1 .swiper-button-next {
+		left: 1.4%;
+		width: 38px;
+		height: 38px;
+		background-size: 22px 22px;
+	}
+	.swiper-container-box .swiper-container-left .swiper-container-1 .swiper-button-prev {
+		right: 46%;
+		width: 38px;
+		height: 38px;
+		background-size: 22px 22px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.common-container {
+		width: 1200px;
+	}
+	.main-container .common-container {
+		width: 980px;
+		margin-left: 154px;
+	}
+	.fixed-block {
+		right: 1.4%;
+	}
+}
