@@ -54,6 +54,7 @@
     line-height: 30px;
     margin: 0;
     padding: 40px 26px;
+    min-height:363px;
 }
 
 .common-container .content-box .title {
