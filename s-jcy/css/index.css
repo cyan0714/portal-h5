@@ -63,6 +63,31 @@ html,body {
 	position: relative;
 	letter-spacing: 1px;
 }
+.top-nav ul li>p {
+	position: absolute;
+	box-sizing: border-box;
+	top: 54px;
+	left: 0;
+	width: 320px;
+	min-height: 80px;
+	background: #fff;
+	display: none;
+	z-index: 99;
+	box-shadow: 0 3px 8px rgba(0,0,0,.1);
+	padding: 10px;
+	flex-wrap: wrap;
+}
+.top-nav ul li>p a {
+	display: inline-block;
+	min-width: 33%;
+	text-align: center;
+}
+.top-nav ul li>p a:hover {
+	color: #0958A7;
+}
+.top-nav ul li:hover p {
+	display: flex;
+}
 .top-nav ul li:after {
 	display: block;
 	content: "";
