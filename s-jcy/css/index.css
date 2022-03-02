@@ -667,10 +667,10 @@ html,body {
 .common-part-container .common-part-left-bot .common-tit>a:hover {
 	color: #025AB4;
 }
-.common-part-container-green .data-list li:hover .text, .common-part-container-green .common-part-left-top .data-list li:hover .time {
+.common-part-container-green .common-part-left-top .data-list li:hover .text, .common-part-container-green .common-part-left-top .data-list li:hover .time {
 	color: #79AC77;
 }
-.common-part-container.common-part-container-green .common-tit>a:hover {
+.common-part-container.common-part-container-green .common-part-left-top .common-tit>a:hover {
 	color: #79AC77;
 }
 .common-part-right {
