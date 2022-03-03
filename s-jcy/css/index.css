@@ -205,6 +205,10 @@ html,body {
 	left: 14px;
 	top: 16px;
 }
+.title-container img {
+	width: auto !important;
+	height: auto !important;
+}
 .title-container h4 {
 	font-size: 28px;
 	font-weight: bold;
@@ -852,19 +856,25 @@ html,body {
 .common-part-right-cont .data-list .text {
 	width: 94%;
 }
-.data-list-special {
-	padding-top: 10px;
-}
 .data-list-special li {
 	border: 0 none;
 	padding: 12px 12px 12px 26px;
 	position: relative;
 }
-.data-list-special li:nth-child(odd) {
+.swiper-container-5 {
+	height: 300px;
+	overflow: hidden;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.swiper-wrapper .swiper-slide:nth-child(odd) .data-list-special li {
 	background: #F8F8F8;
 }
-.data-list-special li:nth-child(even) {
+.swiper-wrapper .swiper-slide:nth-child(even) .data-list-special li {
 	background: #ECECEC;
+}
+.swiper-container-5 .swiper-wrapper .swiper-slide {
+	height: auto !important;
 }
 .data-list-special li span {
 	font-size: 16px !important;
@@ -1157,4 +1167,34 @@ html,body {
 }
 .zx-right-data .data-list {
 	padding-top: 6px;
+}
+.swiper-container-4 {
+	height: 177px;
+	overflow: hidden;
+	position: relative;
+}
+.swiper-container-4 .swiper-button-prev {
+	left: auto;
+	right: 2%;
+	top: 48%;
+	background: #fff;
+	width: 26px;
+	height: 18px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	transform: rotate(90deg);
+}
+.swiper-container-4 .swiper-button-next {
+	left: auto;
+	right: 2%;
+	top: 70%;
+	transform: rotate(90deg);
+	width: 26px;
+	height: 18px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.swiper-container-4 .swiper-button-prev:after, .swiper-container-4 .swiper-button-next:after {
+	font-size: 12px;
+	color: #333;
 }
