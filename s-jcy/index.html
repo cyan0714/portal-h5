@@ -139,7 +139,13 @@
 					</div>
 					<button type="button" class="layui-btn layui-btn-normal login-btn">登录</button>
 					<p class="time-text">
-						<span>2022年2月23日 &nbsp; 星期三 &nbsp; 值班：五部; 2月24日 星期五 值班</span>
+						<span> 今天是2月23日 &nbsp; 星期三 &nbsp; 值班：五部;</span>
+						<span> &nbsp;2月24日 &nbsp; 星期四 &nbsp; 值班：六部;</span>
+						<span> &nbsp;2月25日 &nbsp; 星期五 &nbsp; 值班：五部;</span>
+						<span> &nbsp;2月26日 &nbsp; 星期六 &nbsp; 值班：一部;</span>
+						<span> &nbsp;2月27日 &nbsp; 星期日 &nbsp; 值班：三部;</span>
+						<span> &nbsp;2月21日 &nbsp; 星期一 &nbsp; 值班：二部;</span>
+						<span> &nbsp;2月22日 &nbsp; 星期二 &nbsp; 值班：六部;</span>
 					</p>
 					<div class="input-search-box">
 						<input type="text" name="title" required  lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
@@ -875,7 +881,8 @@
 			     copyright 2021 海南省人民检察院第一分院 版权所有
 			</div>
 		</div>
-		<script src="../lib/jq/jquery-3.2.1.min.js"></script>
+		<!-- <script src="../lib/jq/jquery-3.2.1.min.js"></script> -->
+		<script src="../lib/jquery/jquery3.min.js"></script>
 		<script src="../lib/layui/layui.js"></script>
 		<!-- <script src="lib/swiper/idangerous.swiper.min.js"></script> -->
 		<script src="../lib/swiper/swiper-bundle.min.js"></script>
@@ -918,6 +925,23 @@
 				var src = './imgs/nav_icon_' + index + '.png';
 				$(this).find('img').attr('src', src);
 			});
+
+			function timeTextSwiper() {
+				let content = document.getElementsByClassName('time-text')[0]
+				let span = document.getElementsByClassName('time-text span')
+				var timer=50;
+    			content.scrollLeft=0;
+				function timeTextScrollLeft(){
+    			    if(content.scrollLeft > content.scrollWidth - 430){
+    			        content.scrollLeft = 0;
+    			    }else{
+    			        content.scrollLeft += 1;
+						console.log(content.scrollLeft);
+    			    }
+    			}
+    			upScroll = setInterval(timeTextScrollLeft,timer);
+			}
+			timeTextSwiper();
 
 		</script>
 	</body>
