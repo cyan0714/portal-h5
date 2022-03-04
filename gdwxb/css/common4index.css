@@ -31,7 +31,7 @@ div {
 
 .top-container {
     /*background: #F4F4F4;*/
-    background: url(../imgs/head.jpg) no-repeat;
+    background: url(../imgs/bg_2500_2.jpg) no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 250px;
@@ -186,7 +186,7 @@ div {
 @media screen and (max-width: 1600px) {
     .common-container {
         width: 980px;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
     }
 
     .layui-carousel.title-left > [carousel-item] > * {
@@ -204,4 +204,8 @@ div {
     .main-container .cont-title {
         width: 64%;
     }
+}
+
+.layui-carousel > [carousel-item]:before{
+    content: '';
 }

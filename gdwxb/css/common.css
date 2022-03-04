@@ -149,7 +149,8 @@ div {
 }
 
 .main-container  .daohang-box ul.tabs-box li.active {
-    background: #f20909;
+    background: #8a0a0a;
+    font-weight: 900;
 }
 /**顶部导航 end*/
 .bottom-msg {
@@ -185,4 +186,8 @@ div {
     .main-container .cont-title {
         width: 64%;
     }
+}
+
+.layui-carousel > [carousel-item]:before{
+    content: '';
 }

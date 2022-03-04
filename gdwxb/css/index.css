@@ -50,9 +50,9 @@
 .fixed-block .block-1 {
     box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
     border: 1px solid #e6e6e6;
-    margin-bottom: 16px;
+   /* margin-bottom: 16px;*/
     background: #F2F2F2;
-    border-radius: 14px;
+    border-radius: 14px 14px 0 0;
 }
 
 .fixed-block .top > p:first-child {
@@ -97,9 +97,10 @@
 .fixed-block .block-2 {
     box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
     border: 1px solid #e6e6e6;
+    border-top:none;
     background: #F2F2F2;
     padding: 16px 8px 8px;
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
 }
 
 .fixed-block .block-2 .common-title {
@@ -132,6 +133,7 @@
 
 .fixed-block .item-block-2 {
     display: flex;
+    justify-content:center;
     padding-bottom: 20px;
 }
 
@@ -143,6 +145,8 @@
 .fixed-block .item-block-2 a {
     margin-left: 10px;
     font-size: 15px;
+    width:100px;
+    display:block;
 }
 
 .fixed-block .item-block-2:hover, .fixed-block .item-block-2:hover a {

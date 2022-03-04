@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+div {
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+}
+
+.common-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.time-block {
+    border-bottom: 1px solid #DBD8D8;
+}
+
+.time-flex {
+    font-size: 14px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-container {
+    /*background: #F4F4F4;*/
+    background: url(../imgs/bg_2500_2.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 250px;
+    overflow:hidden;
+   /* background-position-x:-675px;*/
+}
+
+.time-right span {
+    margin: 0 6px;
+}
+
+.time-right a:hover {
+    cursor: pointer;
+    color: #C20314;
+}
+
+.title-block {
+    display: flex;
+    box-sizing: border-box;
+    /* border-bottom: 4px solid #C20314; */
+    /* align-items: center; */
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   /** flex-direction: column;**/
+    margin-top:52px;
+}
+
+.layui-carousel.title-left {
+    width: 100% !important;
+    height: 83px !important;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-left:-21px;
+}
+
+.layui-carousel > [carousel-item] > * {
+    /*background: #F4F4F4 !important;*/
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.layui-carousel.title-left > [carousel-item] p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.search-box {
+    display: flex;
+    /*border: 1px solid #E0DDDD;*/
+    box-sizing: border-box;
+    /**margin-top: 32px;**/
+    height: 32px;
+    font-size:15px;
+}
+
+.search-box span {
+    display: inline-block;
+    line-height: 35px;
+    width: 50px;
+    text-align: center;
+   /* background: #a41c04;*/
+   background-color: rgba(164,28,4,0.6);
+   /* background: url("../imgs/searchTitlebg.jpg") no-repeat;*/
+    font-size: 21px;
+    color: #fff;
+    /**padding-right: 12px;**/
+    background-size: 100% 100%;
+
+}
+
+.search-box span img{
+    margin: 0 6px;
+
+}
+.search-box span:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.search-box input {
+    display: block;
+    width: 167px;
+    border: 0 none;
+    padding-left: 6px;
+    background-color: rgba(251,251,251,0.6); 
+    font-family:仿宋;
+}
+
+.main-container {
+    position: relative;
+    font-family:"Microsoft YaHei",微软雅黑;
+}
+
+/**顶部导航 start*/
+.common-container .daohang-box {
+    /*width: 60%;*/
+    height: 50px
+}
+
+.common-container .daohang-box ul.tabs-box {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    width: 1106px;
+    list-style: none;
+    isplay: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    background: #C20314;
+    color: #fff;
+    border-radius: 2px 2px 0 0;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.common-container .daohang-box ul.tabs-box li {
+    flex: 1;
+    font-size: 16px;
+}
+
+.common-container .daohang-box ul.tabs-box li.active {
+    background: #f20909;
+}
+/**顶部导航 end*/
+.bottom-msg {
+    border-top: 4px solid #C20314;
+    margin-top: 20px;
+    padding: 30px 0 0;
+}
+
+.bottom-msg p {
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1600px) {
+    .common-container {
+        width: 980px;
+        margin: 0 auto;
+    }
+
+    .layui-carousel.title-left > [carousel-item] > * {
+        padding: 0;
+    }
+
+    .layui-carousel.title-left > [carousel-item] img {
+        width: 90%;
+    }
+
+    .fixed-block {
+        right: 1%;
+    }
+
+    .main-container .cont-title {
+        width: 64%;
+    }
+}

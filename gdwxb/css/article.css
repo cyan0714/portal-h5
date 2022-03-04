@@ -1,22 +1,26 @@
-.common-container.title-box {
+.wxb-container{
+    background-color:#eee;
+}
+.common-container .title-box {
     position: relative;
-    width: 100%
+    width: 100%;
+    background-color:#fff;
 }
 
-.common-container.title-box::after {
+.common-container .title-box::after {
     content: '';
     height: 1px;
-    width: 100%;
+    width: 90%;
     position: absolute; /*top: 148px;*/
-    left: 0;
+    left: 5%;
     background-color: #dcdcdc;
 }
 
 .common-container .title-box .title {
     line-height: 56px;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
-    padding: 26px 0 26px 0;
+    padding: 26px 20px 26px 20px;
     font-weight: normal;
 }
 
@@ -49,12 +53,13 @@
 
 .common-container .content-box {
     width: 100%;
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     line-height: 30px;
     margin: 0;
-    padding: 40px 26px;
+    padding: 40px 75px;
     min-height:363px;
+    background-color:#fff;
 }
 
 .common-container .content-box .title {
