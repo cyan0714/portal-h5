@@ -199,14 +199,46 @@ html,body {
     margin: 85px auto 0;
 	width: 250px;
     height: 145px;
-	padding: 0 10px;
     box-sizing: border-box;
 	display: -webkit-box;    
 	-webkit-box-orient: vertical;    
 	-webkit-line-clamp: 7;    
 	overflow: hidden;
-	font-size: 16px;
+	font-size: 15px;
+	overflow: auto;
+}
+
+.left-new-container-content::-webkit-scrollbar {
+	width: 0;
+}
+.left-new-container-content .left-new-item {
+	padding: 5px 8px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.left-new-container-content .left-new-item:last-child {
+	border-bottom: 0;
+}
+.left-new-item .left-new-item-icon {
+	position: relative;
+	bottom: 2px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #2f77f0;
+
+}
+.left-new-item .left-new-item-title {
+	width: 140px;
 	line-height: 21px;
+}
+.left-new-item .left-new-item-time {
+	width: 80px;
+	text-align: right;
 }
 .content-container {
 	background: #fff;
