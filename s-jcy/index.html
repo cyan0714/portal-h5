@@ -236,7 +236,22 @@
 						</ul>
 					</div>
 				</div>
-				<img class="index-banner-center" src="./imgs/index/img_banner.png" />
+				<div class="swiper-container swiper-container-6 common-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="index-banner-center" src="./imgs/index/img_banner.png" />
+						</div>
+						<div class="swiper-slide">
+							<img class="index-banner-center" src="./imgs/index/img_banner.png" />
+						</div>
+						<div class="swiper-slide">
+							<img class="index-banner-center" src="./imgs/index/img_banner.png" />
+						</div>
+					</div>
+					<div class="swiper-button-prev swiper-button-prev-6"></div>
+					<div class="swiper-button-next swiper-button-next-6"></div>
+				</div>
+				
 				<div class="center-container">
 					<div class="center-container-left">
 						<div class="common-block-right common-block-right-2">
@@ -443,37 +458,54 @@
 					<div class="center-container-left">
 						<div class="common-block-right common-block-right-2">
 							<div class="common-tit"><span>检察风采</span><a>更多>></a></div>
-							<div class="jcfc-imgs">
-								<p>
-									<img src="./imgs/index/img_8.png" />
-								</p>
-								<div>
-									<p>
-										<img src="./imgs/index/img_9.png" />
-									</p>
-									<p>
-										<img src="./imgs/index/img_10.png" />
-									</p>
+							<div class="swiper-container swiper-container-7">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" data-hash="">
+										<div class="jcfc-imgs">
+											<p>
+												<img src="./imgs/index/img_8.png" />
+											</p>
+											<div>
+												<p>
+													<img src="./imgs/index/img_9.png" />
+												</p>
+												<p>
+													<img src="./imgs/index/img_10.png" />
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
+								<div class="swiper-button-next swiper-button-next-7"></div>
+								<div class="swiper-button-prev swiper-button-next-7"></div>
 							</div>
 						</div>
 					</div>
 					<div class="center-container-right">
 						<div class="common-block-right common-block-right-2">
 							<div class="common-tit"><span>荣誉榜</span><a>更多>></a></div>
-							<div class="jcfc-imgs">
-								<p>
-									<img src="./imgs/index/img_11.png" />
-								</p>
-								<div>
-									<p>
-										<img src="./imgs/index/img_12.png" />
-									</p>
-									<p>
-										<img src="./imgs/index/img_13.png" />
-									</p>
+							<div class="swiper-container swiper-container-8">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" data-hash="">
+										<div class="jcfc-imgs">
+											<p>
+												<img src="./imgs/index/img_11.png" />
+											</p>
+											<div>
+												<p>
+													<img src="./imgs/index/img_12.png" />
+												</p>
+												<p>
+													<img src="./imgs/index/img_13.png" />
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
+								<div class="swiper-button-next swiper-button-next-8"></div>
+								<div class="swiper-button-prev swiper-button-next-8"></div>
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -1020,6 +1052,38 @@
 			  direction: 'vertical'
 			});
 			
+			var swiper6 = new Swiper('.swiper-container-6', {
+			  loop: 'true',
+			  autoplay: {
+			      delay: 2000,
+			  },
+			  navigation: {
+			    nextEl: ".swiper-button-next-6",
+			    prevEl: ".swiper-button-prev-6",
+			  },
+			});
+			
+			var swiper7 = new Swiper('.swiper-container-7', {
+			  loop: 'true',
+			  autoplay: {
+			      delay: 2000,
+			  },
+			  navigation: {
+			    nextEl: ".swiper-button-next-7",
+			    prevEl: ".swiper-button-prev-7",
+			  },
+			});
+			
+			var swiper7 = new Swiper('.swiper-container-8', {
+			  loop: 'true',
+			  autoplay: {
+			      delay: 2000,
+			  },
+			  navigation: {
+			    nextEl: ".swiper-button-next-8",
+			    prevEl: ".swiper-button-prev-8",
+			  },
+			});
 			
 			//选项hover效果
 			$('.top-nav li').hover(function(){
