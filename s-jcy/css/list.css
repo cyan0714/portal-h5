@@ -50,6 +50,9 @@
 .card-left .layui-tree-set {
   line-height: 28px;
 }
+.card-left .layui-tree-set.active{
+  background: #e6e6e6;
+}
 .card-left .layui-tree-set .layui-tree-entry {
   line-height: 28px;
   height: 28px;

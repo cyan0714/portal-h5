@@ -229,10 +229,20 @@
     <script>
       layui.use(['tree', 'laypage'], function () {
         var tree = layui.tree
+        var $ = layui.$
         var laypage = layui.laypage
         var menu = tree.render({
           elem: '#menu-panel', //绑定元素
           showLine: false,
+          click: function (obj) {
+            $(obj.elem)
+              .parent()
+              .children()
+              .each(function (index, el) {
+                $(el).removeClass('active')
+              })
+            $(obj.elem).addClass('active')
+          },
           data: [
             {
               title: '机构简介', //一级菜单

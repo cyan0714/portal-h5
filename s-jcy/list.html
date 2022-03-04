@@ -256,9 +256,16 @@
     <script>
       layui.use(['tree'], function () {
         var tree = layui.tree
+        var $ = layui.$
         var menu = tree.render({
           elem: '#menu-panel', //绑定元素
-          showLine:false,
+          showLine: false,
+          click: function (obj) {
+            $(obj.elem).parent().children().each(function(index, el){
+              $(el).removeClass('active')
+            })
+            $(obj.elem).addClass('active')
+          },
           data: [
             {
               title: '机构简介', //一级菜单
