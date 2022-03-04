@@ -1,0 +1,186 @@
+.top-banner {
+	position: relative;
+	height: 147px;
+	width: 100%;
+	background: url('../imgs/index/top_banner_2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.list-wrap .container {
+  display: flex;
+  flex-direction: column;
+}
+.container .card-container {
+  min-height: 540px;
+  position: relative;
+}
+.card-container .card-left,
+.card-container .card-right {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  height: calc(100% - 36px);
+}
+.card-container .card-left {
+  width: 220px;
+  left: 0;
+}
+.card-container .card-right {
+  width: calc(100% - 258px);
+  right: 0;
+}
+.card-container::after {
+  content: '';
+  width: 1px;
+  height: calc(100% - 36px);
+  position: absolute;
+  top: 0;
+  left: 232px;
+  background: #e6e6e6;
+}
+.card-container .card-right {
+  box-sizing: border-box;
+  padding: 28px 18px 0 8px;
+  overflow-y: auto;
+}
+.card-container .card-left {
+  padding: 12px 6px;
+  display: flex;
+  justify-content: center;
+}
+.card-left .layui-tree-set {
+  line-height: 28px;
+}
+.card-left .layui-tree-set .layui-tree-entry {
+  line-height: 28px;
+  height: 28px;
+  padding: 6px 0;
+}
+.card-left .layui-tree-spread > .layui-tree-entry .layui-tree-main {
+  background: #e6000f;
+  line-height: 28px;
+  height: 28px;
+}
+.card-left .layui-tree > .layui-tree-set > .layui-tree-entry > .layui-tree-main > .layui-tree-txt {
+  color: #096bb9;
+}
+.card-left .layui-tree > .layui-tree-spread > .layui-tree-entry .layui-tree-main .layui-tree-txt {
+  color: #fff;
+}
+.card-left .layui-tree-spread > .layui-tree-entry .layui-tree-iconArrow::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  border-color: transparent transparent transparent #fff;
+}
+.card-left .layui-tree-spread > .layui-tree-pack {
+  padding-left: 0;
+}
+.card-left .layui-tree-spread > .layui-tree-pack .layui-tree-iconArrow {
+  display: block !important;
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border: 1px solid #e6000f;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 0.5px), calc(-50% - 0.5px));
+}
+.card-left .layui-tree-spread > .layui-tree-pack .layui-tree-iconArrow::after {
+  display: none;
+}
+.card-right {
+  position: relative;
+}
+.card-right .card-item {
+  max-height: calc(50% - 13px);
+  box-sizing: border-box;
+}
+.card-right .card-box {
+  height: calc(100% - 54px);
+  overflow-y: auto;
+}
+.card-right #card-limit {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+#card-limit .layui-laypage {
+  margin: 0;
+}
+.layui-laypage a {
+  border-color: rgb(43, 186, 243);
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #0d8cdd;
+}
+.card-right .card-item:not(:first-child) {
+  margin-top: 26px;
+}
+.card-right .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.card-header .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+.card-header .card-title::before {
+  content: '';
+  width: 4px;
+  height: 18px;
+  background: #096bb9;
+  display: inline-block;
+  margin-right: 8px;
+}
+.card-header .card-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.card-header .card-btn::before {
+  content: '';
+  flex: 1;
+  height: 8px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #e6e6e6 50%, rgba(0, 0, 0, 0) calc(50% + 1px)) repeat;
+  background-size: 8px;
+  display: inline-block;
+  margin: 0 12px 0 18px;
+  cursor: default;
+}
+.card-item .card-content {
+}
+.card-content .card-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content .card-summary:not(:first-child) {
+  margin-top: 25px;
+}
+.card-summary .summary-title {
+  display: flex;
+  align-items: center;
+}
+.card-summary .summary-title::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  display: inline-block;
+  margin-right: 8px;
+}
+.card-summary .summary-date {
+  color: #c0c0c0;
+}
