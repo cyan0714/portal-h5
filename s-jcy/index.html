@@ -1046,6 +1046,9 @@
 				   watchState: true,
 				   replaceState: true
 				},
+				autoplay: {
+					delay: 2000,
+				},
 				pagination: {
 					el: '.pagination-1',
 					clickable: true,
@@ -1137,7 +1140,7 @@
     			        content.scrollLeft = 0;
     			    }else{
     			        content.scrollLeft += 1;
-						console.log(content.scrollLeft);
+						//console.log(content.scrollLeft);
     			    }
     			}
     			upScroll = setInterval(timeTextScrollLeft,timer);
