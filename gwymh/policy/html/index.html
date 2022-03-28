@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>政策直通车列表</title>
+  </head>
+  <body>
+    <div class="policy-container">
+      <div class="policy-box">
+        <div class="policy-header">
+          <ul class="policy-breadcrumb">
+            <li class="breadcrumb-item">首页</li>
+            <li class="breadcrumb-split">>></li>
+            <li class="breadcrumb-item">政策直通车</li>
+          </ul>
+          <div class="policy-history">返回首页</div>
+        </div>
+        <div class="policy-main">
+          <div class="policy-search">
+            <div class="layui-form">
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">政策标题：</label>
+                  <div class="layui-input-inline">
+                    <input type="text" class="layui-input" placeholder="请输入政策标题或关键词" />
+                  </div>
+                </div>
+                <div class="layui-inline">
+                  <label class="layui-form-label">文号：</label>
+                  <div class="layui-input-inline">
+                    <input type="text" class="layui-input" placeholder="请输入文号" />
+                  </div>
+                </div>
+                <div class="layui-inline search-btn">
+                  <button class="layui-btn">查询</button>
+                </div>
+                <div class="layui-inline sift-btn">
+                  <span>展开筛选</span>
+                </div>
+              </div>
+            </div>
+            <div class="policy-sift">
+              <div class="policy-sift-header">筛选:</div>
+              <div class="policy-sift-body">
+                <div class="policy-sift-wrap">
+                  <div class="policy-sift-title">所属政策：</div>
+                  <ul class="policy-sift-content">
+                    <li class="policy-sift-item policy-sift-item--active">全部</li>
+                    <li class="policy-sift-item">福利政策</li>
+                    <li class="policy-sift-item">教育政策</li>
+                    <li class="policy-sift-item">其它政策</li>
+                  </ul>
+                </div>
+                <div class="policy-sift-wrap">
+                  <div class="policy-sift-title">所属分类：</div>
+                  <ul class="policy-sift-content">
+                    <li class="policy-sift-item policy-sift-item--active">全部</li>
+                    <li class="policy-sift-item">分类一</li>
+                    <li class="policy-sift-item">分类二</li>
+                    <li class="policy-sift-item">分类三</li>
+                  </ul>
+                </div>
+                <div class="policy-sift-wrap">
+                  <div class="policy-sift-title">发布时间：</div>
+                  <div class="policy-sift-content">
+                    <input type="text" class="layui-input" id="createDate" placeholder="请选择发布时间" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="policy-content">
+            <div class="policy-card">
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="policy-card-item">
+                <div class="card-header">
+                  <div class="card-label">福利政策</div>
+                  <div class="card-title">
+                    这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题这里显示政策标题
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">文号：</span>
+                      <span class="card-content-text">琼事管发(2019)57号</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">政策来源单位：</span>
+                      <span class="card-content-text">省机关事务管理局</span>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">发布时间：</span>
+                      <span class="card-content-text">2022-01-20 11:53</span>
+                    </div>
+                  </div>
+                  <div class="card-content-column">
+                    <div class="card-content-item">
+                      <span class="card-content-title">所属分类：</span>
+                      <ul class="card-content-label">
+                        <li>分类一</li>
+                      </ul>
+                    </div>
+                    <div class="card-content-item">
+                      <span class="card-content-title">关键词：</span>
+                      <ul class="card-content-label">
+                        <li>幼儿园入学</li>
+                        <li>指标</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="policy-limit" id="limitPage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../../../lib/layui/layui.all.js"></script>
+  <script>
+    layui.use(['laydate', 'laypage'], function () {
+      var laydate = layui.laydate
+      var laypage = layui.laypage
+      var $ = layui.$
+      laydate.render({
+        elem: '#createDate'
+      })
+      laypage.render({
+        elem: 'limitPage',
+        layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
+        count: 100 // 这里的服务端获取
+      })
+
+      //  展开按钮
+      var siftBtn = $('.sift-btn')
+      siftBtn.click(function () {
+        if ($(this).hasClass('sift-btn--open')) {
+          $(this).removeClass('sift-btn--open')
+          $(this).text('展开筛选')
+          $('.policy-sift').hide(300)
+        } else {
+          $(this).addClass('sift-btn--open')
+          $(this).text('收起筛选')
+          $('.policy-sift').show(300)
+        }
+      })
+
+      var selectedSift = function () {}
+
+      //  单选功能
+      /**
+       * 此方法将会获得单选功能当前被选中的元素值
+       */
+      Function.prototype.on = function (el) {
+        console.log(el)
+        return el
+      }
+      /**
+       *此方法将会获得容器中单选功能当前被选中的元素
+       */
+      Function.prototype.change = function () {
+        var selectedList = []
+        $('.policy-sift-item--active').each(function () {
+          selectedList.push(this)
+        })
+        console.log(selectedList)
+        return selectedList
+      }
+
+      //  单选功能
+      var siftNodes = $('.policy-sift-content')
+      siftNodes.each(function (index, element) {
+        $(element).click(function (event) {
+          if (event.target.tagName === 'LI') {
+            $(element)
+              .children()
+              .each(function () {
+                $(this).removeClass('policy-sift-item--active')
+              })
+            $(event.target).addClass('policy-sift-item--active')
+            selectedSift.on(event.target)
+            selectedSift.change()
+          }
+        })
+      })
+    })
+  </script>
+</html>
