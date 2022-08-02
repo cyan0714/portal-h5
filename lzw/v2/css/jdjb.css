@@ -12,8 +12,8 @@
   /* background: url("../imgs/tbbj.png") no-repeat;
       background-size: cover;
       width: 232px;
-      height: 98px;*/
-  margin-right: 72px;
+      height: 98px;
+      margin-right: 72px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,4 +101,3 @@
   margin-right: 20px;
   float: right;
 }
-/*# sourceMappingURL=jdjb.css.map */
