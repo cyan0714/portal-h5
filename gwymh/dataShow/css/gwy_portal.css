@@ -83,6 +83,10 @@ body {
     display: inline-block !important;
 }
 
+.protal-bar {
+    width: 100%;
+}
+
 
 .protal-time-select {
     width: 100%;

@@ -39,512 +39,516 @@
             </div>
         </div>
 
-        <div class="protal-time-select">
-            <div class="layui-form">
-                <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">统计年份：</label>
-                        <div class="layui-input-inline">
-                            <input type="text" class="layui-input" id="yearSelect" placeholder="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sign-census">
-            <img src="./imgs/img_business_census.png" alt="">
-            <span class="census-title">业务统计</span>
-        </div>
-
-        <div class="census-total">
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item1.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">个体许可(次)</div>
-                    <div class="census-total-item-count">3800</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item2.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">个体变更(次)</div>
-                    <div class="census-total-item-count">2987</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item3.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">个体吊销(次)</div>
-                    <div class="census-total-item-count">651</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item4.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">个体注销(次)</div>
-                    <div class="census-total-item-count">150</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item5.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">个体撤销(次)</div>
-                    <div class="census-total-item-count">70</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item6.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">存续个体户</div>
-                    <div class="census-total-item-count">25.18万</div>
-                </div>
-            </div>
-            <div class="census-total-item">
-                <div class="census-total-item-img">
-                    <img src="./imgs/icon_census-total-item7.png" alt="">
-                </div>
-                <div class="census-total-item-content">
-                    <div class="census-total-item-title">资金总数额</div>
-                    <div class="census-total-item-count">9.52亿</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="census-details">
-            <div class="census-details-tabs">
-                <div class="census-details-tabs-item census-details-tabs-item-active">
-                    <span onclick="changeCensusDetailsTabs(event, 0)">个体许可</span>
-                </div>
-                <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 1)">个体变更</span>
-                </div>
-                <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 2)">个体吊销</span>
-                </div>
-                <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 3)">个体注销</span>
-                </div>
-                <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 4)">个体撤销</span>
-                </div>
-            </div>
-            <div class="census-details-content">
-                <div class="census-details-content-item census-details-content-item-active">
-                    <div class="census-details-content-box">
-                        <div class="census-details-content-title">个体许可--数量趋势变化</div>
-                        <div class="census-details-content-charts">
-                            <div id="censusDetails1"></div>
-                        </div>
-                    </div>
-                    <div class="census-details-content-box">
-                        <div class="census-details-content-title">个体许可数量--事项类型</div>
-                        <div class="census-details-content-charts">
-                            <div id="censusDetails2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="census-details-content-item"></div>
-                <div class="census-details-content-item"></div>
-                <div class="census-details-content-item"></div>
-                <div class="census-details-content-item"></div>
-            </div>
-        </div>
-
-        <div class="sign-census">
-            <img src="./imgs/img_business_census.png" alt="">
-            <span class="census-title">信息统计</span>
-        </div>
-
-        <div class="info-census">
-            <div class="info-census-item">
-                <div class="info-census-item-img">
-                    <img src="./imgs/icon_info_census_item1.png" alt="">
-                </div>
-                <div class="info-census-item-content">
-                    <div class="info-census-item-title">存续个体户(户)</div>
-                    <div class="info-census-item-count">
-                        <span class="count-large">25</span>
-                        <span class="count-normal">.48万</span>
-                    </div>
-                </div>
-                <div class="info-census-item-updown">
-                    <div>
-                        <img class="info-census-item-up info-census-item-updown-active"
-                            src="./imgs/icon_info-census-item-up.png" alt="">
-                        <img class="info-census-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
-                        <span class="info-census-item-up-text info-census-item-updown-active">18.8%</span>
-                        <span class="info-census-item-down-text">18.8%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="info-census-item">
-                <div class="info-census-item-img">
-                    <img src="./imgs/icon_info_census_item1.png" alt="">
-                </div>
-                <div class="info-census-item-content">
-                    <div class="info-census-item-title">资金总数额</div>
-                    <div class="info-census-item-count">
-                        <span class="count-large">9</span>
-                        <span class="count-normal">.25亿</span>
-                    </div>
-                </div>
-                <div class="info-census-item-updown">
-                    <div>
-                        <img class="info-census-item-up" src="./imgs/icon_info-census-item-up.png" alt="">
-                        <img class="info-census-item-down info-census-item-updown-active"
-                            src="./imgs/icon_info-census-item-down.png" alt="">
-                        <span class="info-census-item-up-text">18.8%</span>
-                        <span class="info-census-item-down-text info-census-item-updown-active">18.8%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="info-census-item">
-                <div class="info-census-pregress">
-                    <div class="info-census-pregress-title">
-                        <span>城镇数量</span>
-                        <span>农村数量</span>
-                    </div>
-                    <div class="info-census-pregress-cur">
-                        <div class="layui-progress">
-                            <div class="layui-progress-bar" lay-percent="55%"></div>
-                        </div>
-                    </div>
-                    <div class="info-census-pregress-data">
-                        <span>55%</span>
-                        <span>45%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="info-census-item">
-                <div class="info-census-pregress">
-                    <div class="info-census-pregress-title">
-                        <span>个体经营数量</span>
-                        <span>家庭经营数量</span>
-                    </div>
-                    <div class="info-census-pregress-cur">
-                        <div class="layui-progress">
-                            <div class="layui-progress-bar" lay-percent="92%"></div>
-                        </div>
-                    </div>
-                    <div class="info-census-pregress-data">
-                        <span>92%</span>
-                        <span>8%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="charts-total">
-            <div class="layui-tab">
-                <ul class="layui-tab-title">
-                    <li class="layui-this">
-                        <span>个体户数量</span>
-                    </li>
-                    <li><span>个体户资金额</span></li>
-                </ul>
-                <div class="layui-tab-content">
-                    <div class="layui-tab-item layui-show">
-                        <div class="charts-total-item">
-                            <div id="chartsTotal1"></div>
-                        </div>
-                        <div class="charts-total-item">
-                            <div id="chartsTotal2"></div>
-                        </div>
-                    </div>
-                    <div class="layui-tab-item">
-                        <div class="charts-total-item">
-                            <div id="chartsTotal3"></div>
-                        </div>
-                        <div class="charts-total-item">
-                            <div id="chartsTotal4"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="charts-unique">
-            <div class="charts-unique-item">
-                <div id="chartsUnique1"></div>
-            </div>
-            <div class="charts-unique-item">
-                <div id="chartsUnique2"></div>
-            </div>
-        </div>
-
-        <div class="type-unique">
-            <div class="type-unique-item">
-                <div class="type-unique-title">
-                    <span>行业门类</span>
-                </div>
-                <div class="type-unique-details">
-                    <div class="type-unique-details-text">
-                        <div class="type-unique-details-text-title">
-                            <span>占比最高</span>
-                        </div>
-                        <div class="type-unique-details-text-type">
-                            <span>批发和零售业</span>
-                        </div>
-                        <div class="type-unique-details-text-data">
-                            <div class="type-unique-data-number">34</div>
-                            <div class="type-unique-data-chart">%</div>
-                            <div class="type-unique-data-updown">
-                                <img class="type-unique-item-up type-unique-item-updown-active"
-                                    src="./imgs/icon_info-census-item-up.png" alt="">
-                                <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
-                                <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
-                                <span class="type-unique-item-down-text">18.8%</span>
+        <div class="protal-bar">
+            <div class="protal-time-select">
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">统计年份：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="yearSelect" placeholder="">
                             </div>
                         </div>
                     </div>
-                    <div class="type-unique-details-img">
-                        <img src="./imgs/img_type_unique1.png" alt="">
+                </div>
+            </div>
+
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">业务统计</span>
+            </div>
+
+            <div class="census-total">
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item1.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">个体许可(次)</div>
+                        <div class="census-total-item-count">3800</div>
                     </div>
                 </div>
-                <div class="type-unique-table">
-                    <div class="type-unique-table-title">
-                        <span>数量及占比TOP5</span>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item2.png" alt="">
                     </div>
-                    <div class="type-unique-table-content">
-                        <table class="layui-table" lay-even>
-                            <colgroup>
-                                <col width="60">
-                                <col width="220">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>序号</th>
-                                    <th>行业门类</th>
-                                    <th>数量</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="type-unique-table-type">
-                                        <div>批发和零售业</div>
-                                    </td>
-                                    <td class="type-unique-table-progress">
-                                        <div class="type-unique-table-title">
-                                            <span>1033</span>
-                                            <span>34.2%</span>
-                                        </div>
-                                        <div class="type-unique-table-progress-content">
-                                            <div class="layui-progress">
-                                                <div class="layui-progress-bar" lay-percent="34.2%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="type-unique-table-type">
-                                        <div>信息传输、软件和信息技术服务业</div>
-                                    </td>
-                                    <td class="type-unique-table-progress">
-                                        <div class="type-unique-table-title">
-                                            <span>502</span>
-                                            <span>5.1%</span>
-                                        </div>
-                                        <div class="type-unique-table-progress-content">
-                                            <div class="layui-progress">
-                                                <div class="layui-progress-bar" lay-percent="5.1%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td class="type-unique-table-type">
-                                        <div>住宿和餐饮业</div>
-                                    </td>
-                                    <td class="type-unique-table-progress">
-                                        <div class="type-unique-table-title">
-                                            <span>403</span>
-                                            <span>4.1%</span>
-                                        </div>
-                                        <div class="type-unique-table-progress-content">
-                                            <div class="layui-progress">
-                                                <div class="layui-progress-bar" lay-percent="4.1%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td class="type-unique-table-type">
-                                        <div>居民服务、修理和其它服务业</div>
-                                    </td>
-                                    <td class="type-unique-table-progress">
-                                        <div class="type-unique-table-title">
-                                            <span>383</span>
-                                            <span>3.9%</span>
-                                        </div>
-                                        <div class="type-unique-table-progress-content">
-                                            <div class="layui-progress">
-                                                <div class="layui-progress-bar" lay-percent="3.9%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="type-unique-table-type">
-                                        <div>制造业</div>
-                                    </td>
-                                    <td class="type-unique-table-progress">
-                                        <div class="type-unique-table-title">
-                                            <span>361</span>
-                                            <span>3.7%</span>
-                                        </div>
-                                        <div class="type-unique-table-progress-content">
-                                            <div class="layui-progress">
-                                                <div class="layui-progress-bar" lay-percent="3.7%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">个体变更(次)</div>
+                        <div class="census-total-item-count">2987</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item3.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">个体吊销(次)</div>
+                        <div class="census-total-item-count">651</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item4.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">个体注销(次)</div>
+                        <div class="census-total-item-count">150</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item5.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">个体撤销(次)</div>
+                        <div class="census-total-item-count">70</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item6.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">存续个体户</div>
+                        <div class="census-total-item-count">25.18万</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item7.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">资金总数额</div>
+                        <div class="census-total-item-count">9.52亿</div>
                     </div>
                 </div>
             </div>
-            <div class="type-unique-item">
-                <div class="type-unique-title">
-                    <span>登记状态</span>
+
+            <div class="census-details">
+                <div class="census-details-tabs">
+                    <div class="census-details-tabs-item census-details-tabs-item-active">
+                        <span onclick="changeCensusDetailsTabs(event, 0)">个体许可</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 1)">个体变更</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 2)">个体吊销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 3)">个体注销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 4)">个体撤销</span>
+                    </div>
                 </div>
-                <div class="type-unique-details">
-                    <div class="type-unique-details-text">
-                        <div class="type-unique-details-text-title">
-                            <span>占比最高</span>
+                <div class="census-details-content">
+                    <div class="census-details-content-item census-details-content-item-active">
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可--数量趋势变化</div>
+                            <div class="census-details-content-charts">
+                                <div id="censusDetails1"></div>
+                            </div>
                         </div>
-                        <div class="type-unique-details-text-type">
-                            <span>存续</span>
-                        </div>
-                        <div class="type-unique-details-text-data">
-                            <div class="type-unique-data-number">49</div>
-                            <div class="type-unique-data-chart">%</div>
-                            <div class="type-unique-data-updown">
-                                <img class="type-unique-item-up type-unique-item-updown-active"
-                                    src="./imgs/icon_info-census-item-up.png" alt="">
-                                <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
-                                <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
-                                <span class="type-unique-item-down-text">18.8%</span>
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可数量--事项类型</div>
+                            <div class="census-details-content-charts">
+                                <div id="censusDetails2"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="type-unique-details-img">
-                        <img src="./imgs/img_type_unique2.png" alt="">
-                    </div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="portal-content-table">
-            <div class="portal-content-table-header">
-                <div class="portal-content-table-title">
-                    <span>个体营业额最高TOP10</span>
-                </div>
-                <div class="portal-content-table-type">
-                    <div class="portal-content-table-type-up"></div>
-                    <div class="portal-content-table-type-up-text">
-                        <span>高于平均值</span>
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">信息统计</span>
+            </div>
+
+            <div class="info-census">
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
                     </div>
-                    <div class="portal-content-table-type-down"></div>
-                    <div class="portal-content-table-type-down-text">
-                        <span>低于平均值</span>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">存续个体户(户)</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">25</span>
+                            <span class="count-normal">.48万</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text info-census-item-updown-active">18.8%</span>
+                            <span class="info-census-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
+                    </div>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">资金总数额</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">9</span>
+                            <span class="count-normal">.25亿</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up" src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text">18.8%</span>
+                            <span class="info-census-item-down-text info-census-item-updown-active">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-pregress">
+                        <div class="info-census-pregress-title">
+                            <span>城镇数量</span>
+                            <span>农村数量</span>
+                        </div>
+                        <div class="info-census-pregress-cur">
+                            <div class="layui-progress">
+                                <div class="layui-progress-bar" lay-percent="55%"></div>
+                            </div>
+                        </div>
+                        <div class="info-census-pregress-data">
+                            <span>55%</span>
+                            <span>45%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-pregress">
+                        <div class="info-census-pregress-title">
+                            <span>个体经营数量</span>
+                            <span>家庭经营数量</span>
+                        </div>
+                        <div class="info-census-pregress-cur">
+                            <div class="layui-progress">
+                                <div class="layui-progress-bar" lay-percent="92%"></div>
+                            </div>
+                        </div>
+                        <div class="info-census-pregress-data">
+                            <span>92%</span>
+                            <span>8%</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="portal-content-table-content">
-                <table class="layui-table" lay-even>
-                    <colgroup>
-                        <col width="60">
-                        <col>
-                        <col width="320">
-                        <col width="220">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>序号</th>
-                            <th>个体工商户名称</th>
-                            <th>公开营业额（万元）</th>
-                            <th>整体对比</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>海口市鑫海超市</td>
-                            <td>288.8</td>
-                            <td class="portal-content-table-up">6.3%</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>海口市小麻干货食杂店</td>
-                            <td>269.7</td>
-                            <td class="portal-content-table-up">6.2%</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>果之蓝水果店</td>
-                            <td>158.4</td>
-                            <td class="portal-content-table-up">6.1%</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>合创广告制造工坊</td>
-                            <td>127.8</td>
-                            <td class="portal-content-table-up">6.1%</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>王球农副食品加工坊</td>
-                            <td>119.9</td>
-                            <td class="portal-content-table-up">6.0%</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>海口市鑫海超市</td>
-                            <td>105.7</td>
-                            <td class="portal-content-table-up">5.9%</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>海口市小麻干货食杂店</td>
-                            <td>88.2</td>
-                            <td class="portal-content-table-up">5.9%</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>果之蓝水果店</td>
-                            <td>85.7</td>
-                            <td class="portal-content-table-up">5.8%</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>合创广告制造工坊</td>
-                            <td>79.6</td>
-                            <td class="portal-content-table-up">5.8%</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>王球农副食品加工坊</td>
-                            <td>68.9</td>
-                            <td class="portal-content-table-up">5.6%</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <div class="charts-total">
+                <div class="layui-tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">
+                            <span>个体户数量</span>
+                        </li>
+                        <li><span>个体户资金额</span></li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal1"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal2"></div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal3"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-unique">
+                <div class="charts-unique-item">
+                    <div id="chartsUnique1"></div>
+                </div>
+                <div class="charts-unique-item">
+                    <div id="chartsUnique2"></div>
+                </div>
+            </div>
+
+            <div class="type-unique">
+                <div class="type-unique-item">
+                    <div class="type-unique-title">
+                        <span>行业门类</span>
+                    </div>
+                    <div class="type-unique-details">
+                        <div class="type-unique-details-text">
+                            <div class="type-unique-details-text-title">
+                                <span>占比最高</span>
+                            </div>
+                            <div class="type-unique-details-text-type">
+                                <span>批发和零售业</span>
+                            </div>
+                            <div class="type-unique-details-text-data">
+                                <div class="type-unique-data-number">34</div>
+                                <div class="type-unique-data-chart">%</div>
+                                <div class="type-unique-data-updown">
+                                    <img class="type-unique-item-up type-unique-item-updown-active"
+                                        src="./imgs/icon_info-census-item-up.png" alt="">
+                                    <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png"
+                                        alt="">
+                                    <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                                    <span class="type-unique-item-down-text">18.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-unique-details-img">
+                            <img src="./imgs/img_type_unique1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="type-unique-table">
+                        <div class="type-unique-table-title">
+                            <span>数量及占比TOP5</span>
+                        </div>
+                        <div class="type-unique-table-content">
+                            <table class="layui-table" lay-even>
+                                <colgroup>
+                                    <col width="60">
+                                    <col width="220">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>行业门类</th>
+                                        <th>数量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="type-unique-table-type">
+                                            <div>批发和零售业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>1033</span>
+                                                <span>34.2%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="34.2%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="type-unique-table-type">
+                                            <div>信息传输、软件和信息技术服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>502</span>
+                                                <span>5.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="5.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="type-unique-table-type">
+                                            <div>住宿和餐饮业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>403</span>
+                                                <span>4.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="4.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="type-unique-table-type">
+                                            <div>居民服务、修理和其它服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>383</span>
+                                                <span>3.9%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.9%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="type-unique-table-type">
+                                            <div>制造业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>361</span>
+                                                <span>3.7%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.7%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-unique-item">
+                    <div class="type-unique-title">
+                        <span>登记状态</span>
+                    </div>
+                    <div class="type-unique-details">
+                        <div class="type-unique-details-text">
+                            <div class="type-unique-details-text-title">
+                                <span>占比最高</span>
+                            </div>
+                            <div class="type-unique-details-text-type">
+                                <span>存续</span>
+                            </div>
+                            <div class="type-unique-details-text-data">
+                                <div class="type-unique-data-number">49</div>
+                                <div class="type-unique-data-chart">%</div>
+                                <div class="type-unique-data-updown">
+                                    <img class="type-unique-item-up type-unique-item-updown-active"
+                                        src="./imgs/icon_info-census-item-up.png" alt="">
+                                    <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png"
+                                        alt="">
+                                    <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                                    <span class="type-unique-item-down-text">18.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-unique-details-img">
+                            <img src="./imgs/img_type_unique2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portal-content-table">
+                <div class="portal-content-table-header">
+                    <div class="portal-content-table-title">
+                        <span>个体营业额最高TOP10</span>
+                    </div>
+                    <div class="portal-content-table-type">
+                        <div class="portal-content-table-type-up"></div>
+                        <div class="portal-content-table-type-up-text">
+                            <span>高于平均值</span>
+                        </div>
+                        <div class="portal-content-table-type-down"></div>
+                        <div class="portal-content-table-type-down-text">
+                            <span>低于平均值</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-content-table-content">
+                    <table class="layui-table" lay-even>
+                        <colgroup>
+                            <col width="60">
+                            <col>
+                            <col width="320">
+                            <col width="220">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>个体工商户名称</th>
+                                <th>公开营业额（万元）</th>
+                                <th>整体对比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>海口市鑫海超市</td>
+                                <td>288.8</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>海口市小麻干货食杂店</td>
+                                <td>269.7</td>
+                                <td class="portal-content-table-up">6.2%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>果之蓝水果店</td>
+                                <td>158.4</td>
+                                <td class="portal-content-table-up">6.1%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>合创广告制造工坊</td>
+                                <td>127.8</td>
+                                <td class="portal-content-table-up">6.1%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>王球农副食品加工坊</td>
+                                <td>119.9</td>
+                                <td class="portal-content-table-up">6.0%</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>海口市鑫海超市</td>
+                                <td>105.7</td>
+                                <td class="portal-content-table-up">5.9%</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>海口市小麻干货食杂店</td>
+                                <td>88.2</td>
+                                <td class="portal-content-table-up">5.9%</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>果之蓝水果店</td>
+                                <td>85.7</td>
+                                <td class="portal-content-table-up">5.8%</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>合创广告制造工坊</td>
+                                <td>79.6</td>
+                                <td class="portal-content-table-up">5.8%</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>王球农副食品加工坊</td>
+                                <td>68.9</td>
+                                <td class="portal-content-table-up">5.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
