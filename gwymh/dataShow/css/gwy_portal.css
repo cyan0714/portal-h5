@@ -701,7 +701,6 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-
 }
 
 .type-unique-table-content th,
@@ -709,10 +708,87 @@ body {
     text-align: center;
 }
 
-.portal-table {
+.portal-content-table {
     width: 100%;
     height: 646px;
     margin-top: 16px;
     border: 1px solid #dcdcdc;
     padding: 16px 24px;
+}
+
+.portal-content-table-header {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portal-content-table-title {
+    height: 100%;
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.portal-content-table-type {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.portal-content-table-type-up {
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+}
+
+.portal-content-table-type-up-text,
+.portal-content-table-type-down-text {
+    margin-left: 10px;
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 12px;
+}
+
+.portal-content-table-type-down {
+    margin-left: 25px;
+    width: 12px;
+    height: 12px;
+    background-color: #6adcaf;
+}
+
+.portal-content-table-content {
+    margin-top: 16px;
+    width: 100%;
+    height: calc(100% - 36px);
+}
+
+.portal-content-table-content .layui-table {
+    height: 100%;
+}
+
+.portal-content-table-content thead {
+    height: 65px;
+}
+
+.portal-content-table-content thead tr {
+    background-color: #F2FAFE;
+}
+
+.portal-content-table-content tbody td,
+.portal-content-table-content thead tr th {
+    text-align: center;
+}
+
+.protal-content .layui-table[lay-even] tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.portal-content-table-up {
+    color: #ff0000;
 }
