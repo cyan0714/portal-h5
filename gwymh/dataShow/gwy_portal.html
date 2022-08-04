@@ -776,7 +776,465 @@
                     </div>
                 </div>
                 <div class="info-total-item">
-                    
+                    <div class="info-census-pregress">
+                        <div class="info-census-pregress-title">
+                            <span>内资企业数量占比</span>
+                            <span>外资企业数量占比</span>
+                        </div>
+                        <div class="info-census-pregress-cur">
+                            <div class="layui-progress">
+                                <div class="layui-progress-bar" lay-percent="54%"></div>
+                            </div>
+                        </div>
+                        <div class="info-census-pregress-data">
+                            <span>54%</span>
+                            <span>46%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-total">
+                <div class="layui-tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">
+                            <span>个体户数量</span>
+                        </li>
+                        <li><span>个体户资金额</span></li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal1"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal2"></div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal3"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-unique">
+                <div class="type-unique-item">
+                    <div class="type-unique-title">
+                        <span>行业门类</span>
+                    </div>
+                    <div class="type-unique-details">
+                        <div class="type-unique-details-text">
+                            <div class="type-unique-details-text-title">
+                                <span>占比最高</span>
+                            </div>
+                            <div class="type-unique-details-text-type">
+                                <span>信息传输、软件和信息技术服务业</span>
+                            </div>
+                            <div class="type-unique-details-text-data">
+                                <div class="type-unique-data-number">34</div>
+                                <div class="type-unique-data-chart">%</div>
+                                <div class="type-unique-data-updown">
+                                    <img class="type-unique-item-up type-unique-item-updown-active"
+                                        src="./imgs/icon_info-census-item-up.png" alt="">
+                                    <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png"
+                                        alt="">
+                                    <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                                    <span class="type-unique-item-down-text">18.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-unique-details-img">
+                            <img src="./imgs/img_type_unique1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="type-unique-table">
+                        <div class="type-unique-table-title">
+                            <span>数量及占比TOP5</span>
+                        </div>
+                        <div class="type-unique-table-content">
+                            <table class="layui-table" lay-even>
+                                <colgroup>
+                                    <col width="60">
+                                    <col width="220">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>行业门类</th>
+                                        <th>数量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="type-unique-table-type">
+                                            <div>批发和零售业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>1033</span>
+                                                <span>34.2%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="34.2%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="type-unique-table-type">
+                                            <div>信息传输、软件和信息技术服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>502</span>
+                                                <span>5.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="5.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="type-unique-table-type">
+                                            <div>住宿和餐饮业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>403</span>
+                                                <span>4.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="4.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="type-unique-table-type">
+                                            <div>居民服务、修理和其它服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>383</span>
+                                                <span>3.9%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.9%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="type-unique-table-type">
+                                            <div>制造业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>361</span>
+                                                <span>3.7%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.7%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-unique-item">
+                    <div class="type-unique-title">
+                        <span>企业类型</span>
+                    </div>
+                    <div class="type-unique-details">
+                        <div class="type-unique-details-text">
+                            <div class="type-unique-details-text-title">
+                                <span>占比最高</span>
+                            </div>
+                            <div class="type-unique-details-text-type">
+                                <span>有限责任公司（自然人独资）</span>
+                            </div>
+                            <div class="type-unique-details-text-data">
+                                <div class="type-unique-data-number">49</div>
+                                <div class="type-unique-data-chart">%</div>
+                                <div class="type-unique-data-updown">
+                                    <img class="type-unique-item-up type-unique-item-updown-active"
+                                        src="./imgs/icon_info-census-item-up.png" alt="">
+                                    <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png"
+                                        alt="">
+                                    <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                                    <span class="type-unique-item-down-text">18.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-unique-details-img">
+                            <img src="./imgs/img_type_unique3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="type-unique-table">
+                        <div class="type-unique-table-title">
+                            <span>数量及占比TOP5</span>
+                        </div>
+                        <div class="type-unique-table-content">
+                            <table class="layui-table" lay-even>
+                                <colgroup>
+                                    <col width="60">
+                                    <col width="220">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>行业门类</th>
+                                        <th>数量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="type-unique-table-type">
+                                            <div>批发和零售业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>1033</span>
+                                                <span>34.2%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="34.2%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="type-unique-table-type">
+                                            <div>信息传输、软件和信息技术服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>502</span>
+                                                <span>5.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="5.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="type-unique-table-type">
+                                            <div>住宿和餐饮业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>403</span>
+                                                <span>4.1%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="4.1%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="type-unique-table-type">
+                                            <div>居民服务、修理和其它服务业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>383</span>
+                                                <span>3.9%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.9%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="type-unique-table-type">
+                                            <div>制造业</div>
+                                        </td>
+                                        <td class="type-unique-table-progress">
+                                            <div class="type-unique-table-title">
+                                                <span>361</span>
+                                                <span>3.7%</span>
+                                            </div>
+                                            <div class="type-unique-table-progress-content">
+                                                <div class="layui-progress">
+                                                    <div class="layui-progress-bar" lay-percent="3.7%"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-unique">
+                <div class="charts-unique-item">
+                    <div id="chartsUnique3"></div>
+                </div>
+                <div class="charts-unique-item">
+                    <div id="chartsUnique4"></div>
+                </div>
+            </div>
+
+            <div class="sign-census money-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">资金情况统计</span>
+            </div>
+
+            <div class="portal-content-table">
+                <div class="portal-content-table-header">
+                    <div class="portal-content-table-title">
+                        <span>企业资产总额最高TOP10</span>
+                    </div>
+                    <div class="portal-content-table-type">
+                        <div class="portal-content-table-type-up"></div>
+                        <div class="portal-content-table-type-up-text">
+                            <span>高于平均值</span>
+                        </div>
+                        <div class="portal-content-table-type-down"></div>
+                        <div class="portal-content-table-type-down-text">
+                            <span>低于平均值</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-content-table-content">
+                    <table class="layui-table" lay-even>
+                        <colgroup>
+                            <col width="60">
+                            <col>
+                            <col width="160">
+                            <col width="160">
+                            <col width="160">
+                            <col width="150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>企业名称</th>
+                                <th>资产额（亿元）</th>
+                                <th>营业收入（亿元）</th>
+                                <th>利润总额（亿元）</th>
+                                <th>资产总体情况</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

@@ -894,3 +894,7 @@ body {
 .info-total-enterprise-number-updown .type-unique-item-updown-active {
     display: inline-block;
 }
+
+.money-census {
+    margin-top: 27px;
+}
