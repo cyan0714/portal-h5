@@ -708,3 +708,11 @@ body {
 .type-unique-table-content td {
     text-align: center;
 }
+
+.portal-table {
+    width: 100%;
+    height: 646px;
+    margin-top: 16px;
+    border: 1px solid #dcdcdc;
+    padding: 16px 24px;
+}
