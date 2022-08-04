@@ -1,0 +1,710 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(181.9deg, rgba(232, 222, 212, 0) 0%, #c9c6c0 100%);
+    overflow: auto;
+}
+
+.protal-content {
+    margin: 10px auto;
+    width: 1200px;
+    background-color: #ffffff;
+    padding: 0 24px 24px;
+}
+
+.protal-content-header {
+    width: 100%;
+    height: 80px;
+    padding-top: 16px;
+}
+
+.protal-content-header-content {
+    margin: 13px 0 13px 8px;
+    width: 196px;
+    height: 38px;
+}
+
+.protal-content-header-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.protal-content-tabnav {
+    width: 100%;
+    height: 128px;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.protal-content-tabnav-item {
+    height: 100%;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: Microsoft YaHei UI;
+    color: #999999;
+    font-size: 24px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.protal-content-tabnav-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+}
+
+.protal-content-tabnav-item .active {
+    display: none;
+}
+
+.protal-content-tabnav-item.protal-content-tabnav-item-active {
+    border: 3px solid #a62929;
+    background-color: #fff;
+    font-family: Microsoft YaHei UI;
+    font-weight: 700;
+    color: #a62929;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.protal-content-tabnav-item.protal-content-tabnav-item-active .normal {
+    display: none !important;
+}
+
+.protal-content-tabnav-item.protal-content-tabnav-item-active .active {
+    display: inline-block !important;
+}
+
+
+.protal-time-select {
+    width: 100%;
+    height: 32px;
+    position: relative;
+    top: -14px;
+}
+
+.protal-time-select .layui-form {
+    height: 100%;
+}
+
+.protal-time-select .layui-form-item {
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.protal-time-select .layui-inline {
+    margin: 0 !important;
+    height: 100%;
+}
+
+.protal-time-select .layui-form-label {
+    padding: 6px 10px;
+    font-family: Helvetica CE;
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.protal-time-select .layui-input-inline {
+    margin: 0 !important;
+    height: 100%;
+}
+
+.protal-time-select .layui-input {
+    height: 100%;
+}
+
+
+.sign-census {
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+
+.sign-census img {
+    width: 100%;
+    height: 100%;
+}
+
+.sign-census span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    font-family: Microsoft YaHei UI;
+    font-weight: 700;
+    color: #6d4405;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.census-total {
+    width: 100%;
+    height: 96px;
+    padding: 16px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.census-total-item {
+    flex: 1;
+    height: 64px;
+    border-right: 1px solid #dcdcdc;
+    padding: 9px 16px 9px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.census-total-item:last-child {
+    border-right: 0;
+}
+
+.census-total-item-img {
+    width: 32px;
+    height: 100%;
+}
+
+.census-total-item-img img {
+    width: 32px;
+    height: 32px;
+}
+
+.census-total-item-content {
+    flex: 1;
+    margin-left: 8px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.census-total-item-title {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 14px;
+}
+
+.census-total-item-count {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.census-details {
+    margin-bottom: 32px;
+    height: 352px;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.census-details-tabs {
+    width: 140px;
+    height: 100%;
+    padding: 26px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.census-details-tabs-item {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.census-details-tabs-item span {
+    cursor: pointer;
+}
+
+.census-details-tabs-item.census-details-tabs-item-active {
+    background-image: linear-gradient(180deg, #cf4a48 0%, #a74443 100%);
+    color: #fff;
+}
+
+.census-details-content {
+    flex: 1;
+    height: 100%;
+    padding: 20px 38px;
+}
+
+.census-details-content-item {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.census-details-content-item.census-details-content-item-active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.census-details-content-box {
+    width: 48%;
+    height: 100%;
+}
+
+.census-details-content-title {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 16px;
+}
+
+.census-details-content-charts {
+    width: 100%;
+    height: calc(100% - 44px);
+}
+
+#censusDetails1,
+#censusDetails2 {
+    width: 100%;
+    height: 100%;
+}
+
+.info-census {
+    width: 100%;
+    height: 96px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5px;
+}
+
+.info-census-item {
+    flex: 1;
+    height: 100%;
+    padding: 9px 0 9px 16px;
+    border-right: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-census-item:last-child {
+    border-right: 0;
+}
+
+.info-census-item-img {
+    width: 32px;
+    height: 100%;
+}
+
+.info-census-item-img img {
+    height: 32px;
+    width: 32px;
+}
+
+.info-census-item-content {
+    flex: 1;
+    margin: 0 8px 0 24px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-census-item-content .info-census-item-title {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 14px;
+}
+
+.info-census-item-content .info-census-item-count .count-large {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.info-census-item-content .info-census-item-count .count-normal {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 18px;
+}
+
+.info-census-item-updown {
+    height: 62px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info-census-item-updown div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info-census-item-updown img {
+    width: 16px;
+    height: 16px;
+    display: none;
+    margin-right: 4px;
+}
+
+.info-census-item-updown .info-census-item-up-text {
+    height: 18px;
+    font-family: Microsoft YaHei UI;
+    color: #ff0000;
+    font-size: 14px;
+    line-height: 18px;
+    display: none;
+}
+
+.info-census-item-updown .info-census-item-down-text {
+    height: 18px;
+    font-family: Microsoft YaHei UI;
+    color: #6adcaf;
+    font-size: 14px;
+    line-height: 18px;
+    display: none;
+}
+
+.info-census-item-updown .info-census-item-updown-active {
+    display: inline-block !important;
+}
+
+.info-census-pregress {
+    height: 100%;
+    width: 100%;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.info-census-pregress-title,
+.info-census-pregress-data {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-census-pregress-title {
+    align-items: baseline;
+}
+
+.info-census-pregress-data {
+    align-items: flex-end;
+}
+
+.info-census-pregress-title span {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.info-census-pregress-data span {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-census-pregress-cur {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-census-pregress-cur .layui-progress {
+    width: 100%;
+    background-color: #ffa94c;
+}
+
+.info-census-pregress-cur .layui-progress-bar {
+    background-color: #73a0fa;
+}
+
+.charts-total {
+    width: 100%;
+    height: 436px;
+    margin-top: 16px;
+    border: 1px solid #dcdcdc;
+}
+
+.charts-total .layui-tab {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.charts-total .layui-tab-title {
+    height: 48px;
+    width: 100%;
+    mix-blend-mode: multiply;
+    background-color: #f2f2f2;
+}
+
+.charts-total .layui-tab-title li {
+    height: 48px;
+    line-height: 48px;
+    font-family: Microsoft YaHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 32px;
+}
+
+.charts-total .layui-tab-title li.layui-this {
+    font-weight: 700;
+    color: #a62929;
+    font-size: 20px;
+}
+
+.charts-total .layui-tab-title li.layui-this span {
+    display: inline-block;
+    height: 100%;
+    border-bottom: 2px solid #a62929;
+}
+
+.charts-total .layui-tab-title li::after {
+    height: 48px;
+    line-height: 48px;
+    border: 0;
+}
+
+.charts-total .layui-tab-content {
+    height: calc(100% - 48px);
+    width: 100%;
+}
+
+.charts-total .layui-tab-item.layui-show {
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.charts-total-item {
+    height: 100%;
+    width: 48%;
+}
+
+.charts-unique {
+    height: 400px;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.charts-unique-item {
+    height: 100%;
+    width: 568px;
+    border: 1px solid #dcdcdc;
+}
+
+.type-unique {
+    height: 540px;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.type-unique-item {
+    height: 100%;
+    width: 568px;
+    border: 1px solid #dcdcdc;
+}
+
+.type-unique-title {
+    width: 100%;
+    height: 48px;
+    mix-blend-mode: multiply;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 48px;
+}
+
+.type-unique-title span {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.type-unique-details {
+    width: 100%;
+    height: 138px;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.type-unique-details-text {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.type-unique-details-img {
+    width: 88px;
+    height: 100%;
+}
+
+.type-unique-details-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.type-unique-details-text-title {
+    height: 20px;
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.type-unique-details-text-type {
+    font-family: Microsoft YaHei UI;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+}
+
+.type-unique-details-text-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.type-unique-data-number {
+    font-family: Microsoft YaHei UI;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    margin-right: 2px;
+}
+
+.type-unique-data-chart {
+    font-family: Microsoft YaHei UI;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.type-unique-data-updown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.type-unique-data-updown img,
+.type-unique-data-updown span {
+    display: none;
+    margin-left: 3px;
+}
+
+.type-unique-item-up-text {
+    font-family: Microsoft YaHei UI;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.type-unique-item-down-text {
+    font-family: Microsoft YaHei UI;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.type-unique-data-updown .type-unique-item-updown-active {
+    display: inline-block;
+}
+
+.type-unique-table {
+    width: 100%;
+    height: calc(100% - 186px);
+    padding: 24px;
+}
+
+.type-unique-table-title {
+    font-family: Microsoft YaHei UI;
+    color: #000000;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.type-unique-table-content {
+    margin-top: 13px;
+    width: 100%;
+    height: calc(100% - 33px);
+}
+
+.type-unique-table-title {
+    height: 20px;
+    width: 1005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.type-unique-table-title span:first-of-type {
+    font-weight: 700;
+}
+
+.type-unique-table-content .layui-table {
+    margin: 0;
+    height: 100%;
+}
+
+.type-unique-table-content thead {
+    height: 52px;
+}
+
+.type-unique-table-content thead tr {
+    background-color: #F2FAFE;
+}
+
+.type-unique-table-content td {
+    padding: 5px 8px;
+}
+
+.type-unique-table-type div {
+    max-height: 52px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.type-unique-table-content th,
+.type-unique-table-content td {
+    text-align: center;
+}
