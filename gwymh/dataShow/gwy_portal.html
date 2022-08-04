@@ -39,14 +39,14 @@
             </div>
         </div>
 
-        <div class="protal-bar">
+        <div class="protal-bar personality-bar protal-bar-show">
             <div class="protal-time-select">
                 <div class="layui-form">
                     <div class="layui-form-item">
                         <div class="layui-inline">
                             <label class="layui-form-label">统计年份：</label>
                             <div class="layui-input-inline">
-                                <input type="text" class="layui-input" id="yearSelect" placeholder="">
+                                <input type="text" class="layui-input" id="yearSelect0" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -127,15 +127,19 @@
             <div class="census-details">
                 <div class="census-details-tabs">
                     <div class="census-details-tabs-item census-details-tabs-item-active">
-                        <span onclick="changeCensusDetailsTabs(event, 0)">个体许可</span>
+                        <span onclick="changeCensusDetailsTabs(event, 0 , 'personality')">个体许可</span>
                     </div>
-                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 1)">个体变更</span>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 1, 'personality')">个体变更</span>
                     </div>
-                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 2)">个体吊销</span>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 2, 'personality')">个体吊销</span>
                     </div>
-                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 3)">个体注销</span>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 3, 'personality')">个体注销</span>
                     </div>
-                    <div class="census-details-tabs-item"><span onclick="changeCensusDetailsTabs(event, 4)">个体撤销</span>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 4, 'personality')">个体撤销</span>
                     </div>
                 </div>
                 <div class="census-details-content">
@@ -551,6 +555,235 @@
                 </div>
             </div>
         </div>
+
+        <div class="protal-bar enterprise-bar">
+            <div class="protal-time-select">
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">统计年份：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="yearSelect1" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">业务统计</span>
+            </div>
+
+            <div class="census-total">
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item1.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业许可(次)</div>
+                        <div class="census-total-item-count">3800</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item2.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业变更(次)</div>
+                        <div class="census-total-item-count">2987</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item3.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业吊销(次)</div>
+                        <div class="census-total-item-count">651</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item4.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业注销(次)</div>
+                        <div class="census-total-item-count">150</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item5.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业撤销(次)</div>
+                        <div class="census-total-item-count">70</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item6.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">企业迁移(次)</div>
+                        <div class="census-total-item-count">25</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item7.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">股权出质登记(次)</div>
+                        <div class="census-total-item-count">985</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="census-details">
+                <div class="census-details-tabs">
+                    <div class="census-details-tabs-item census-details-tabs-item-active">
+                        <span onclick="changeCensusDetailsTabs(event, 0, 'enterprise')">企业许可</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 1, 'enterprise')">企业变更</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 2, 'enterprise')">企业吊销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 3, 'enterprise')">企业注销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 4, 'enterprise')">企业撤销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 5, 'enterprise')">企业迁移</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 6, 'enterprise')">股权出质登记</span>
+                    </div>
+                </div>
+                <div class="census-details-content">
+                    <div class="census-details-content-item census-details-content-item-active">
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可--数量趋势变化</div>
+                            <div class="census-details-content-charts">
+                                <div id="personality-censusDetails1"></div>
+                            </div>
+                        </div>
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可数量--事项类型</div>
+                            <div class="census-details-content-charts">
+                                <div id="personality-censusDetails2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                </div>
+            </div>
+
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">信息统计</span>
+            </div>
+
+            <div class="info-total">
+                <div class="info-total-item">
+                    <div class="info-total-enterprise-img">
+                        <div class="info-total-enterprise-pic">
+                            <img src="./imgs/icon_enterprise_in.png" alt="">
+                        </div>
+                        <div class="info-total-enterprise-img-title">
+                            <span>内资企业</span>
+                        </div>
+                    </div>
+                    <div class="info-total-enterprise-number">
+                        <div class="info-total-enterprise-number-title">
+                            <span>企业数量</span>
+                        </div>
+                        <div class="info-total-enterprise-number-count">
+                            <span>25.48万</span>
+                        </div>
+                        <div class="info-total-enterprise-number-updown">
+                            <img class="type-unique-item-up type-unique-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                            <span class="type-unique-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                    <div class="info-total-enterprise-number">
+                        <div class="info-total-enterprise-number-title">
+                            <span>企业数量</span>
+                        </div>
+                        <div class="info-total-enterprise-number-count">
+                            <span>25.48万</span>
+                        </div>
+                        <div class="info-total-enterprise-number-updown">
+                            <img class="type-unique-item-up type-unique-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                            <span class="type-unique-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-total-item">
+                    <div class="info-total-enterprise-img">
+                        <div class="info-total-enterprise-pic">
+                            <img src="./imgs/icon_enterprise_out.png" alt="">
+                        </div>
+                        <div class="info-total-enterprise-img-title">
+                            <span>内资企业</span>
+                        </div>
+                    </div>
+                    <div class="info-total-enterprise-number">
+                        <div class="info-total-enterprise-number-title">
+                            <span>企业数量</span>
+                        </div>
+                        <div class="info-total-enterprise-number-count">
+                            <span>25.48万</span>
+                        </div>
+                        <div class="info-total-enterprise-number-updown">
+                            <img class="type-unique-item-up type-unique-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                            <span class="type-unique-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                    <div class="info-total-enterprise-number">
+                        <div class="info-total-enterprise-number-title">
+                            <span>企业数量</span>
+                        </div>
+                        <div class="info-total-enterprise-number-count">
+                            <span>25.48万</span>
+                        </div>
+                        <div class="info-total-enterprise-number-updown">
+                            <img class="type-unique-item-up type-unique-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="type-unique-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="type-unique-item-up-text type-unique-item-updown-active">18.8%</span>
+                            <span class="type-unique-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-total-item">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="protal-bar">
+            2222
+        </div>
     </div>
 
     <script src="../../lib/jquery/jquery3.min.js"></script>
@@ -562,7 +795,7 @@
             var laydate = layui.laydate;
             //年选择器
             laydate.render({
-                elem: '#yearSelect',
+                elem: '#yearSelect0',
                 type: 'year',
                 value: 2020
             });
