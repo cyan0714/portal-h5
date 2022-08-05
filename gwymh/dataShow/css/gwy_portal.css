@@ -905,3 +905,8 @@ body {
 .money-census {
     margin-top: 27px;
 }
+
+.charts-total-item-charts {
+    width: 100%;
+    height: calc(100% - 35px);
+}
