@@ -1,15 +1,15 @@
 // 折柱混合
-const lineBarP1 = echarts.init(document.getElementById('censusDetails1')) // 个体许可--数量趋势变化
-const lineBarP2 = echarts.init(document.getElementById('chartsTotal1')) // 个体户数量变化趋势图
+const lineBarP1 = echarts.init(document.getElementById('personality-censusDetails1')) // 个体许可--数量趋势变化
+const lineBarP2 = echarts.init(document.getElementById('personality-chartsTotal1')) // 个体户数量变化趋势图
 
 // 饼图
-const pieP1 = echarts.init(document.getElementById('chartsUnique2')) // 个体资金额--分布情况
-const pieP2 = echarts.init(document.getElementById('chartsUnique3')) // 登记状态占比
+const pieP1 = echarts.init(document.getElementById('personality-chartsUnique2')) // 个体资金额--分布情况
+const pieP2 = echarts.init(document.getElementById('personality-chartsUnique3')) // 登记状态占比
 
 // 玫瑰图
-const roseP1 = echarts.init(document.getElementById('censusDetails2')) // 个体许可数量--事项类型
+const roseP1 = echarts.init(document.getElementById('personality-censusDetails2')) // 个体许可数量--事项类型
 // 折线图
-const lineP1 = echarts.init(document.getElementById('chartsUnique1')) // 个体户经营异常情况
+const lineP1 = echarts.init(document.getElementById('personality-chartsUnique1')) // 个体户经营异常情况
 // 地图
 const map = echarts.init(document.getElementById('chartsTotal2')) // 个体资金额--分布情况
 
