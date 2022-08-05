@@ -1,23 +1,18 @@
 // 折柱混合
-const lineBarT1 = echarts.init(document.getElementById('censusDetails1')) // 个体许可--数量趋势变化
-const lineBarT2 = echarts.init(document.getElementById('chartsTotal1')) // 个体户数量变化趋势图
+const lineBarP1 = echarts.init(document.getElementById('censusDetails1')) // 个体许可--数量趋势变化
+const lineBarP2 = echarts.init(document.getElementById('chartsTotal1')) // 个体户数量变化趋势图
 
 // 饼图
-const pieT1 = echarts.init(document.getElementById('chartsUnique2')) // 个体资金额--分布情况
-const pieT2 = echarts.init(document.getElementById('chartsUnique3')) // 登记状态占比
+const pieP1 = echarts.init(document.getElementById('chartsUnique2')) // 个体资金额--分布情况
+const pieP2 = echarts.init(document.getElementById('chartsUnique3')) // 登记状态占比
 
 // 玫瑰图
-const roseT1 = echarts.init(document.getElementById('censusDetails2')) // 个体许可数量--事项类型
-
+const roseP1 = echarts.init(document.getElementById('censusDetails2')) // 个体许可数量--事项类型
 // 折线图
-const lineT1 = echarts.init(document.getElementById('chartsUnique1')) // 个体户经营异常情况
-
-// 嵌套环形图
-const nestLoopT1 = echarts.init(document.getElementById('chartsUnique4')) // 行政处罚--违法及处罚类型占比
+const lineP1 = echarts.init(document.getElementById('chartsUnique1')) // 个体户经营异常情况
 
 
-
-const lineBarT1Option = {
+const lineBarP1Option = {
   tooltip: {
     trigger: 'axis',
     axisPointer: {
@@ -88,8 +83,7 @@ const lineBarT1Option = {
     }
   ]
 }
-
-const roseT1Option = {
+const roseP1Option = {
   tooltip: {
     trigger: 'item',
     formatter: '{b} : {c} ({d}%)'
@@ -140,8 +134,7 @@ const roseT1Option = {
     }
   ]
 };
-
-const lineT1Option = {
+const lineP1Option = {
   legend: {
     icon: 'square',
     left: 'left',
@@ -173,7 +166,7 @@ const lineT1Option = {
 };
 // const colors = ["red", "green", "blue", "orange", "greenyellow"];
 // let i = 0;
-const pieT1Option = {
+const pieP1Option = {
   tooltip: {
     trigger: 'item'
   },
@@ -234,8 +227,7 @@ const pieT1Option = {
     },
   ]
 };
-
-const pieT2Option = {
+const pieP2Option = {
   tooltip: {
     trigger: 'item'
   },
@@ -295,58 +287,7 @@ const pieT2Option = {
     },
   ]
 };
-
-const nestLoopT1Option = {
-  tooltip: {
-    trigger: 'item',
-    formatter: '{b}: {c} ({d}%)'
-  },
-  series: [
-    {
-      name: 'Access From',
-      type: 'pie',
-      selectedMode: 'single',
-      radius: [0, '40%'],
-      label: {
-        position: 'inner',
-        fontSize: 12,
-        color: '#fff'
-      },
-      labelLine: {
-        show: false
-      },
-      data: [
-        { value: 1548, name: '虚假宣传' },
-        { value: 775, name: '商标违法'},
-        { value: 679, name: '以次充好', selected: true  }
-      ]
-    },
-    {
-      name: 'Access From',
-      type: 'pie',
-      radius: ['55%', '68%'],
-      label: {
-        // formatter: `{b}:{c}件\n{d}%`
-        formatter(text) {
-          let txt = text.name.replace(/\S{5}/g, function (match) {
-            console.log('match', match);
-            return match + '\n'
-          })
-          return `${txt}：${text.value}件\n${text.percent}%`
-        },
-      },
-      data: [
-        { value: 1048, name: '警告' },
-        { value: 335, name: '行政拘留' },
-        { value: 310, name: '责令停业停产' },
-        { value: 251, name: '没收违法所得和非法财产' },
-        { value: 234, name: '罚款' },
-      ]
-    }
-  ]
-};
-
-const lineBarT2Options = {
+const lineBarP2Options = {
   tooltip: {
     trigger: 'axis',
     axisPointer: {
@@ -419,16 +360,13 @@ const lineBarT2Options = {
 }
 
 
+lineBarP1.setOption(lineBarP1Option)
+lineBarP2.setOption(lineBarP2Options)
 
-lineBarT1.setOption(lineBarT1Option)
-lineBarT2.setOption(lineBarT2Options)
+pieP1.setOption(pieP1Option)
+pieP2.setOption(pieP2Option)
 
-pieT1.setOption(pieT1Option)
-pieT2.setOption(pieT2Option)
+roseP1.setOption(roseP1Option)
+lineP1.setOption(lineP1Option)
 
-roseT1.setOption(roseT1Option)
-
-lineT1.setOption(lineT1Option)
-
-nestLoopT1.setOption(nestLoopT1Option)
 
