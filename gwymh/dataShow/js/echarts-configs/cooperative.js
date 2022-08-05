@@ -5,7 +5,8 @@ const lineBarC2 = echarts.init(document.getElementById('cooperative-chartsTotal1
 const roseC1 = echarts.init(document.getElementById('cooperative-censusDetails4'))
 const lineC1 = echarts.init(document.getElementById('cooperative-chartsUnique5'))
 const nestLoopC1 = echarts.init(document.getElementById('cooperative-chartsUnique6')) // 行政处罚--违法及处罚类型占比
-
+// 地图
+const map10 = echarts.init(document.getElementById('chartsTotal10')) // 个体资金额--分布情况
 
 const lineBarC1Option = {
   tooltip: {
@@ -21,17 +22,14 @@ const lineBarC1Option = {
     left: 0,
     data: ['数量(次)', '涨幅']
   },
-  xAxis: [
-    {
-      type: 'category',
-      data: ['2017', '2018', '2019', '2020', '2021'],
-      axisPointer: {
-        type: 'shadow'
-      }
+  xAxis: [{
+    type: 'category',
+    data: ['2017', '2018', '2019', '2020', '2021'],
+    axisPointer: {
+      type: 'shadow'
     }
-  ],
-  yAxis: [
-    {
+  }],
+  yAxis: [{
       type: 'value',
       // name: '数量(次)',
       min: 0,
@@ -44,18 +42,19 @@ const lineBarC1Option = {
       min: 0,
       max: 100,
       interval: 5,
-      splitLine: { show: false }, // 去除网格线
+      splitLine: {
+        show: false
+      }, // 去除网格线
       show: false, // 隐藏该轴
       axisLabel: {
         formatter: '{value} %'
       }
     }
   ],
-  series: [
-    {
+  series: [{
       name: '数量(次)',
       type: 'bar',
-      barWidth : 30,
+      barWidth: 30,
       data: [200.6, 500.9, 900.0, 1800.4, 2200.7]
     },
     {
@@ -92,17 +91,14 @@ const lineBarC2Options = {
     left: 0,
     data: ['数量(次)', '涨幅']
   },
-  xAxis: [
-    {
-      type: 'category',
-      data: ['2017', '2018', '2019', '2020', '2021'],
-      axisPointer: {
-        type: 'shadow'
-      }
+  xAxis: [{
+    type: 'category',
+    data: ['2017', '2018', '2019', '2020', '2021'],
+    axisPointer: {
+      type: 'shadow'
     }
-  ],
-  yAxis: [
-    {
+  }],
+  yAxis: [{
       type: 'value',
       // name: '数量(次)',
       min: 0,
@@ -115,18 +111,19 @@ const lineBarC2Options = {
       min: 0,
       max: 100,
       interval: 5,
-      splitLine: { show: false }, // 去除网格线
+      splitLine: {
+        show: false
+      }, // 去除网格线
       show: false, // 隐藏该轴
       axisLabel: {
         formatter: '{value} %'
       }
     }
   ],
-  series: [
-    {
+  series: [{
       name: '数量(次)',
       type: 'bar',
-      barWidth : 30,
+      barWidth: 30,
       data: [200.6, 500.9, 900.0, 1800.4, 2200.7]
     },
     {
@@ -168,37 +165,58 @@ const roseC1Option = {
       'rose8'
     ]
   },
-  series: [
-    {
-      name: 'Area Mode',
-      type: 'pie',
-      radius: [20, 100],
-      center: ['50%', '50%'],
-      roseType: 'area',
-      itemStyle: {
-        borderRadius: 5
+  series: [{
+    name: 'Area Mode',
+    type: 'pie',
+    radius: [20, 100],
+    center: ['50%', '50%'],
+    roseType: 'area',
+    itemStyle: {
+      borderRadius: 5
+    },
+    label: {
+      formatter(text) {
+        let txt = text.name.replace(/\S{5}/g, function (match) {
+          console.log('match', match);
+          return match + '\n'
+        })
+        return `${txt}:${text.value}件`
       },
-      label: {
-        formatter(text) {
-          let txt = text.name.replace(/\S{5}/g, function (match) {
-            console.log('match', match);
-            return match + '\n'
-          })
-          return `${txt}:${text.value}件`
-        },
+    },
+    data: [{
+        value: 30,
+        name: '医疗器械经营许可'
       },
-      data: [
-        { value: 30, name: '医疗器械经营许可' },
-        { value: 28, name: 'rose 2' },
-        { value: 26, name: 'rose 3' },
-        { value: 24, name: 'rose 4' },
-        { value: 22, name: 'rose 5' },
-        { value: 20, name: 'rose 6' },
-        { value: 18, name: 'rose 7' },
-        { value: 16, name: 'rose 8' }
-      ]
-    }
-  ]
+      {
+        value: 28,
+        name: 'rose 2'
+      },
+      {
+        value: 26,
+        name: 'rose 3'
+      },
+      {
+        value: 24,
+        name: 'rose 4'
+      },
+      {
+        value: 22,
+        name: 'rose 5'
+      },
+      {
+        value: 20,
+        name: 'rose 6'
+      },
+      {
+        value: 18,
+        name: 'rose 7'
+      },
+      {
+        value: 16,
+        name: 'rose 8'
+      }
+    ]
+  }]
 };
 const lineC1Option = {
   legend: {
@@ -216,26 +234,22 @@ const lineC1Option = {
     type: 'value',
     backgroundColor: 'red',
     min: 0,
-      max: 1500,
-      interval: 500
+    max: 1500,
+    interval: 500
   },
-  series: [
-    {
-      name: '被标记为经营异常的个体户数量',
-      data: [820, 932, 901, 934, 1290, 1330, 1320],
-      type: 'line',
-      areaStyle: {
-      }
-    }
-  ]
+  series: [{
+    name: '被标记为经营异常的个体户数量',
+    data: [820, 932, 901, 934, 1290, 1330, 1320],
+    type: 'line',
+    areaStyle: {}
+  }]
 };
 const nestLoopC1Option = {
   tooltip: {
     trigger: 'item',
     formatter: '{b}: {c} ({d}%)'
   },
-  series: [
-    {
+  series: [{
       name: 'Access From',
       type: 'pie',
       selectedMode: 'single',
@@ -248,10 +262,19 @@ const nestLoopC1Option = {
       labelLine: {
         show: false
       },
-      data: [
-        { value: 1548, name: '虚假宣传' },
-        { value: 775, name: '商标违法'},
-        { value: 679, name: '以次充好', selected: true  }
+      data: [{
+          value: 1548,
+          name: '虚假宣传'
+        },
+        {
+          value: 775,
+          name: '商标违法'
+        },
+        {
+          value: 679,
+          name: '以次充好',
+          selected: true
+        }
       ]
     },
     {
@@ -268,16 +291,206 @@ const nestLoopC1Option = {
           return `${txt}：${text.value}件\n${text.percent}%`
         },
       },
-      data: [
-        { value: 1048, name: '警告' },
-        { value: 335, name: '行政拘留' },
-        { value: 310, name: '责令停业停产' },
-        { value: 251, name: '没收违法所得和非法财产' },
-        { value: 234, name: '罚款' },
+      data: [{
+          value: 1048,
+          name: '警告'
+        },
+        {
+          value: 335,
+          name: '行政拘留'
+        },
+        {
+          value: 310,
+          name: '责令停业停产'
+        },
+        {
+          value: 251,
+          name: '没收违法所得和非法财产'
+        },
+        {
+          value: 234,
+          name: '罚款'
+        },
       ]
     }
   ]
 };
+
+// 海南地图
+echarts.registerMap('hainan', haiNanCode);
+let mapOption10 = {
+  visualMap: {
+    show: false,
+    left: "right",
+    min: 500000,
+    max: 38000000,
+    inRange: {
+      color: [
+        "#FEF7DB",
+        "#FBEFBD",
+        "#F7E5A0",
+        "#F0E1A3",
+        "#F0E1A3",
+        "#E3D8AA",
+        "#D8C888",
+        "#CCB867",
+        "#D3B954",
+        "#DEBF42",
+        "#ECC93E",
+        "#FAD648",
+        "#F7F1D6",
+        "#FCF5D8",
+      ],
+    },
+    calculable: false,
+  },
+  series: [{
+    name: "Map",
+    type: "map",
+    aspectScale: 1,
+    roam: false,
+    map: 'hainan',
+    label: {
+      formatter: ["{b|{b}}", "{c|{c}}"].join("\n"),
+      show: true,
+      rich: {
+        b: {
+          color: "#000",
+          lineHeight: 21,
+          fontSize: 14,
+        },
+        c: {
+          color: "#000",
+          fontSize: 13,
+        },
+      },
+    },
+    itemStyle: {
+      borderColor: "#F4DFCC",
+      borderWidth: 1.2,
+      shadowColor: "rgba(100, 100, 100, 0.6)",
+      shadowBlur: 100,
+      shadowOffsetX: -10,
+      opacity: 0.9,
+      emphasis: {
+        areaColor: "#F4DFCC",
+      },
+    },
+    data: [{
+        name: "三沙市",
+        value: 0,
+        itemStyle: {
+          borderColor: "#0e56c2"
+        }
+      },
+      {
+        name: "儋州市",
+        value: 123
+      },
+      {
+        name: "海口市",
+        value: 3122
+      },
+      {
+        name: "三亚市",
+        value: 1055
+      },
+      {
+        name: "白沙县",
+        value: 102
+      },
+      {
+        name: "保亭县",
+        value: 508
+      },
+      {
+        name: "昌江县",
+        value: 86
+      },
+      {
+        name: "澄迈县",
+        value: 77
+      },
+      {
+        name: "定安县",
+        value: 45
+      },
+      {
+        name: "东方市",
+        value: 201
+      },
+      {
+        name: "乐东县",
+        value: 111
+      },
+      {
+        name: "临高县",
+        value: 53
+      },
+      {
+        name: "陵水县",
+        value: 12
+      },
+      {
+        name: "琼海市",
+        value: 331
+      },
+      {
+        name: "琼中县",
+        value: 108
+      },
+      {
+        name: "屯昌县",
+        value: 45
+      },
+      {
+        name: "万宁市",
+        value: 463
+      },
+      {
+        name: "文昌市",
+        value: 508
+      },
+      {
+        name: "五指山市",
+        value: 112
+      },
+      {
+        name: "秀英区",
+        value: 807
+      },
+      {
+        name: "龙华区",
+        value: 708
+      },
+      {
+        name: "琼山区",
+        value: 908
+      },
+      {
+        name: "美兰区",
+        value: 504
+      },
+      {
+        name: "崖州区",
+        value: 13
+      },
+      {
+        name: "天涯区",
+        value: 88
+      },
+      {
+        name: "吉阳区",
+        value: 47
+      },
+      {
+        name: "海棠区",
+        value: 14
+      },
+    ],
+  }, ],
+
+}
 
 
 lineBarC1.setOption(lineBarC1Option)
@@ -287,3 +500,4 @@ nestLoopC1.setOption(nestLoopC1Option)
 roseC1.setOption(roseC1Option)
 lineC1.setOption(lineC1Option)
 
+map10.setOption(mapOption10);
