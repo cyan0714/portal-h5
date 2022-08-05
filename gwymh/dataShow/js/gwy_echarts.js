@@ -1,12 +1,23 @@
-const censusDetails1 = echarts.init(document.getElementById('censusDetails1'))
-const censusDetails2 = echarts.init(document.getElementById('censusDetails2'))
-const chartsUnique1 = echarts.init(document.getElementById('chartsUnique1'))
-const chartsUnique2 = echarts.init(document.getElementById('chartsUnique2'))
-const chartsUnique4 = echarts.init(document.getElementById('chartsUnique4'))
+// 折柱混合
+const lineBarT1 = echarts.init(document.getElementById('censusDetails1')) // 个体许可--数量趋势变化
+const lineBarT2 = echarts.init(document.getElementById('chartsTotal1')) // 个体户数量变化趋势图
+
+// 饼图
+const pieT1 = echarts.init(document.getElementById('chartsUnique2')) // 个体资金额--分布情况
+const pieT2 = echarts.init(document.getElementById('chartsUnique3')) // 登记状态占比
+
+// 玫瑰图
+const roseT1 = echarts.init(document.getElementById('censusDetails2')) // 个体许可数量--事项类型
+
+// 折线图
+const lineT1 = echarts.init(document.getElementById('chartsUnique1')) // 个体户经营异常情况
+
+// 嵌套环形图
+const nestLoopT1 = echarts.init(document.getElementById('chartsUnique4')) // 行政处罚--违法及处罚类型占比
 
 
 
-const censusDetails1Option = {
+const lineBarT1Option = {
   tooltip: {
     trigger: 'axis',
     axisPointer: {
@@ -17,6 +28,7 @@ const censusDetails1Option = {
     }
   },
   legend: {
+    left: 0,
     data: ['数量(次)', '涨幅']
   },
   xAxis: [
@@ -31,7 +43,7 @@ const censusDetails1Option = {
   yAxis: [
     {
       type: 'value',
-      name: '数量(次)',
+      // name: '数量(次)',
       min: 0,
       max: 4000,
       interval: 1000
@@ -54,7 +66,7 @@ const censusDetails1Option = {
       name: '数量(次)',
       type: 'bar',
       barWidth : 30,
-      data: [200.6, 500.9, 900.0, 800.4, 1200.7]
+      data: [200.6, 500.9, 900.0, 1800.4, 2200.7]
     },
     {
       name: '涨幅',
@@ -72,15 +84,15 @@ const censusDetails1Option = {
           return value + ' °C'
         }
       },
-      data: [20, 30, 80, 4.5, 6.3]
+      data: [20, 30, 80, 85, 90]
     }
   ]
 }
 
-const censusDetails2Option = {
+const roseT1Option = {
   tooltip: {
     trigger: 'item',
-    formatter: '{a} <br/>{b} : {c} ({d}%)'
+    formatter: '{b} : {c} ({d}%)'
   },
   legend: {
     left: 'center',
@@ -106,8 +118,17 @@ const censusDetails2Option = {
       itemStyle: {
         borderRadius: 5
       },
+      label: {
+        formatter(text) {
+          let txt = text.name.replace(/\S{5}/g, function (match) {
+            console.log('match', match);
+            return match + '\n'
+          })
+          return `${txt}:${text.value}件`
+        },
+      },
       data: [
-        { value: 30, name: 'rose 1' },
+        { value: 30, name: '医疗器械经营许可' },
         { value: 28, name: 'rose 2' },
         { value: 26, name: 'rose 3' },
         { value: 24, name: 'rose 4' },
@@ -120,7 +141,13 @@ const censusDetails2Option = {
   ]
 };
 
-const chartsUnique1Option = {
+const lineT1Option = {
+  legend: {
+    icon: 'square',
+    left: 'left',
+    itemWidth: 10,
+    data: ['被标记为经营异常的个体户数量']
+  },
   xAxis: {
     type: 'category',
     boundaryGap: false,
@@ -136,6 +163,7 @@ const chartsUnique1Option = {
   },
   series: [
     {
+      name: '被标记为经营异常的个体户数量',
       data: [820, 932, 901, 934, 1290, 1330, 1320],
       type: 'line',
       areaStyle: {
@@ -143,8 +171,71 @@ const chartsUnique1Option = {
     }
   ]
 };
+// const colors = ["red", "green", "blue", "orange", "greenyellow"];
+// let i = 0;
+const pieT1Option = {
+  tooltip: {
+    trigger: 'item'
+  },
+  // series 中放两个对象的目的是使饼图内部显示百分比，外部显示文字说明
+  series: [
+    
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      label: {
+        show: true,
+        position: "outside",
+        color: "#7F8FA4",
+        fontSize: 12,
+        formatter: '{b}\n{c}(户)',
+        // rich: {
+        //   dot: {
+        //     width: 6,
+        //     height: 6,
+        //     borderRadius: 3,
+        //     backgroundColor: '#000'
+        //   }
+        // }
+      },
+      data: [
+        { value: 1048, name: 'Search Engine' },
+        { value: 1300, name: 'Direct' },
+        { value: 484, name: 'Union Ads' },
+        { value: 300, name: 'Video Ads' }
+      ],
+    },
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      // itemStyle: {
+        // normal: {
+          // color() {
+          //   return colors[i++]
+          // },
+          // borderWidth: 2,
+          // borderColor: 'rgb(9,37,71, 0.5)'
+        // }
+      // },
+      label: {
+        show: true,
+        position: "inside",
+        formatter: `{d}%`,
+        fontSize: 10,
+      },
+      data: [
+        { value: 1048, name: 'Search Engine' },
+        { value: 1300, name: 'Direct' },
+        { value: 484, name: 'Union Ads' },
+        { value: 300, name: 'Video Ads' }
+      ],
+    },
+  ]
+};
 
-const chartsUnique2Option = {
+const pieT2Option = {
   tooltip: {
     trigger: 'item'
   },
@@ -156,14 +247,22 @@ const chartsUnique2Option = {
       radius: '50%',
       label: {
         show: true,
-        position: "inside",
-        formatter: `{d}%`,
-        fontSize: 10,
+        position: "outside",
+        color: "#7F8FA4",
+        fontSize: 12,
+        formatter: '{b}\n{c}(户)',
+        // rich: {
+        //   dot: {
+        //     width: 6,
+        //     height: 6,
+        //     borderRadius: 3,
+        //     backgroundColor: '#000'
+        //   }
+        // }
       },
       data: [
         { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
+        { value: 1300, name: 'Direct' },
         { value: 484, name: 'Union Ads' },
         { value: 300, name: 'Video Ads' }
       ],
@@ -172,24 +271,32 @@ const chartsUnique2Option = {
       name: 'Access From',
       type: 'pie',
       radius: '50%',
+      // itemStyle: {
+        // normal: {
+          // color() {
+          //   return colors[i++]
+          // },
+          // borderWidth: 2,
+          // borderColor: 'rgb(9,37,71, 0.5)'
+        // }
+      // },
       label: {
         show: true,
-        position: "outside",
-        color: "#7F8FA4",
-        fontSize: 12,
+        position: "inside",
+        formatter: `{d}%`,
+        fontSize: 10,
       },
       data: [
         { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
+        { value: 1300, name: 'Direct' },
         { value: 484, name: 'Union Ads' },
         { value: 300, name: 'Video Ads' }
       ],
-    }
+    },
   ]
 };
 
-const chartsUnique4Option = {
+const nestLoopT1Option = {
   tooltip: {
     trigger: 'item',
     formatter: '{b}: {c} ({d}%)'
@@ -239,11 +346,89 @@ const chartsUnique4Option = {
   ]
 };
 
+const lineBarT2Options = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross',
+      crossStyle: {
+        color: '#999'
+      }
+    }
+  },
+  legend: {
+    left: 0,
+    data: ['数量(次)', '涨幅']
+  },
+  xAxis: [
+    {
+      type: 'category',
+      data: ['2017', '2018', '2019', '2020', '2021'],
+      axisPointer: {
+        type: 'shadow'
+      }
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value',
+      // name: '数量(次)',
+      min: 0,
+      max: 4000,
+      interval: 1000
+    },
+    {
+      type: 'value',
+      name: '涨幅',
+      min: 0,
+      max: 100,
+      interval: 5,
+      splitLine: { show: false }, // 去除网格线
+      show: false, // 隐藏该轴
+      axisLabel: {
+        formatter: '{value} %'
+      }
+    }
+  ],
+  series: [
+    {
+      name: '数量(次)',
+      type: 'bar',
+      barWidth : 30,
+      data: [200.6, 500.9, 900.0, 1800.4, 2200.7]
+    },
+    {
+      name: '涨幅',
+      type: 'line',
+      label: {
+        show: true,
+        position: 'top',
+        formatter: function (value) {
+          return value.value + '%'
+        }
+      },
+      yAxisIndex: 1,
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' °C'
+        }
+      },
+      data: [20, 30, 80, 85, 90]
+    }
+  ]
+}
 
 
-censusDetails1.setOption(censusDetails1Option)
-censusDetails2.setOption(censusDetails2Option)
 
-chartsUnique1.setOption(chartsUnique1Option)
-chartsUnique2.setOption(chartsUnique2Option)
-chartsUnique4.setOption(chartsUnique4Option)
+lineBarT1.setOption(lineBarT1Option)
+lineBarT2.setOption(lineBarT2Options)
+
+pieT1.setOption(pieT1Option)
+pieT2.setOption(pieT2Option)
+
+roseT1.setOption(roseT1Option)
+
+lineT1.setOption(lineT1Option)
+
+nestLoopT1.setOption(nestLoopT1Option)
+

@@ -514,6 +514,7 @@ body {
 .charts-total-item {
     height: 100%;
     width: 48%;
+    padding: 16px 24px;
 }
 
 .charts-unique {
@@ -529,6 +530,11 @@ body {
     width: 568px;
     padding: 16px 24px;
     border: 1px solid #dcdcdc;
+}
+
+.charts-unique-title,.charts-total-item-title {
+    color: #000;
+    font-size: 16px;
 }
 
 .type-unique {
