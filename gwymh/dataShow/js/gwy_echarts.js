@@ -2,6 +2,9 @@ const censusDetails1 = echarts.init(document.getElementById('censusDetails1'))
 const censusDetails2 = echarts.init(document.getElementById('censusDetails2'))
 const chartsUnique1 = echarts.init(document.getElementById('chartsUnique1'))
 const chartsUnique2 = echarts.init(document.getElementById('chartsUnique2'))
+const chartsUnique4 = echarts.init(document.getElementById('chartsUnique4'))
+
+
 
 const censusDetails1Option = {
   tooltip: {
@@ -186,8 +189,61 @@ const chartsUnique2Option = {
   ]
 };
 
+const chartsUnique4Option = {
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b}: {c} ({d}%)'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      selectedMode: 'single',
+      radius: [0, '40%'],
+      label: {
+        position: 'inner',
+        fontSize: 12,
+        color: '#fff'
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 1548, name: '虚假宣传' },
+        { value: 775, name: '商标违法'},
+        { value: 679, name: '以次充好', selected: true  }
+      ]
+    },
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: ['55%', '68%'],
+      label: {
+        // formatter: `{b}:{c}件\n{d}%`
+        formatter(text) {
+          let txt = text.name.replace(/\S{5}/g, function (match) {
+            console.log('match', match);
+            return match + '\n'
+          })
+          return `${txt}：${text.value}件\n${text.percent}%`
+        },
+      },
+      data: [
+        { value: 1048, name: '警告' },
+        { value: 335, name: '行政拘留' },
+        { value: 310, name: '责令停业停产' },
+        { value: 251, name: '没收违法所得和非法财产' },
+        { value: 234, name: '罚款' },
+      ]
+    }
+  ]
+};
+
+
+
 censusDetails1.setOption(censusDetails1Option)
 censusDetails2.setOption(censusDetails2Option)
 
 chartsUnique1.setOption(chartsUnique1Option)
 chartsUnique2.setOption(chartsUnique2Option)
+chartsUnique4.setOption(chartsUnique4Option)
