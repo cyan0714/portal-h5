@@ -155,6 +155,7 @@ const chartsUnique2Option = {
         show: true,
         position: "inside",
         formatter: `{d}%`,
+        fontSize: 10,
       },
       data: [
         { value: 1048, name: 'Search Engine' },
@@ -163,7 +164,6 @@ const chartsUnique2Option = {
         { value: 484, name: 'Union Ads' },
         { value: 300, name: 'Video Ads' }
       ],
-      
     },
     {
       name: 'Access From',
@@ -182,7 +182,6 @@ const chartsUnique2Option = {
         { value: 484, name: 'Union Ads' },
         { value: 300, name: 'Video Ads' }
       ],
-      
     }
   ]
 };
