@@ -289,10 +289,10 @@
                   </div>
                 </div>
                 <div class="charts-unique-item">
-                  <div class="charts-unique-title">个体资金额--分布情况</div>
-                  <div class="charts-unique-content-charts">
-                      <div id="chartsUnique2" style="width: 100%;height:350px;"></div>
-                  </div>
+                    <div class="charts-unique-title">个体资金额--分布情况</div>
+                    <div class="charts-unique-content-charts">
+                        <div id="chartsUnique2" style="width: 100%;height:350px;"></div>
+                    </div>
                 </div>
             </div>
 
@@ -823,18 +823,18 @@
                     <div class="layui-tab-content">
                         <div class="layui-tab-item layui-show">
                             <div class="charts-total-item">
-                                <div id="chartsTotal1"></div>
+                                <div id="chartsTotal5"></div>
                             </div>
                             <div class="charts-total-item">
-                                <div id="chartsTotal2"></div>
+                                <div id="chartsTotal6"></div>
                             </div>
                         </div>
                         <div class="layui-tab-item">
                             <div class="charts-total-item">
-                                <div id="chartsTotal3"></div>
+                                <div id="chartsTotal7"></div>
                             </div>
                             <div class="charts-total-item">
-                                <div id="chartsTotal4"></div>
+                                <div id="chartsTotal8"></div>
                             </div>
                         </div>
                     </div>
@@ -1122,13 +1122,13 @@
 
             <div class="charts-unique">
                 <div class="charts-unique-item">
-                  
+
                 </div>
                 <div class="charts-unique-item">
-                  <div class="charts-unique-title">行政处罚--违法及处罚类型占比</div>
-                  <div class="charts-unique-content-charts">
-                      <div id="chartsUnique4" style="width: 518px;height:350px;"></div>
-                  </div>
+                    <div class="charts-unique-title">行政处罚--违法及处罚类型占比</div>
+                    <div class="charts-unique-content-charts">
+                        <div id="chartsUnique4" style="width: 518px;height:350px;"></div>
+                    </div>
                 </div>
             </div>
 
@@ -1260,8 +1260,390 @@
             </div>
         </div>
 
-        <div class="protal-bar">
-            2222
+        <div class="protal-bar cooperative-bar">
+            <div class="protal-time-select">
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">统计年份：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="yearSelect2" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">业务统计</span>
+            </div>
+
+            <div class="census-total">
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item1.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专许可(次)</div>
+                        <div class="census-total-item-count">3800</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item2.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专变更(次)</div>
+                        <div class="census-total-item-count">2987</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item3.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专吊销(次)</div>
+                        <div class="census-total-item-count">651</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item4.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专注销(次)</div>
+                        <div class="census-total-item-count">150</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item5.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专撤销(次)</div>
+                        <div class="census-total-item-count">70</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item6.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">农专数量(户)</div>
+                        <div class="census-total-item-count">25</div>
+                    </div>
+                </div>
+                <div class="census-total-item">
+                    <div class="census-total-item-img">
+                        <img src="./imgs/icon_census-total-item7.png" alt="">
+                    </div>
+                    <div class="census-total-item-content">
+                        <div class="census-total-item-title">出资总额</div>
+                        <div class="census-total-item-count">9.52亿</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="census-details">
+                <div class="census-details-tabs">
+                    <div class="census-details-tabs-item census-details-tabs-item-active">
+                        <span onclick="changeCensusDetailsTabs(event, 0 , 'cooperative')">农专许可</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 1, 'cooperative')">农专变更</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 2, 'cooperative')">农专吊销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 3, 'cooperative')">农专注销</span>
+                    </div>
+                    <div class="census-details-tabs-item"><span
+                            onclick="changeCensusDetailsTabs(event, 4, 'cooperative')">农专撤销</span>
+                    </div>
+                </div>
+                <div class="census-details-content">
+                    <div class="census-details-content-item census-details-content-item-active">
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可--数量趋势变化</div>
+                            <div class="census-details-content-charts">
+                                <div id="censusDetails3" style="width: 100%;height:300px;"></div>
+                            </div>
+                        </div>
+                        <div class="census-details-content-box">
+                            <div class="census-details-content-title">个体许可数量--事项类型</div>
+                            <div class="census-details-content-charts">
+                                <div id="censusDetails4" style="width: 100%;height:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                    <div class="census-details-content-item"></div>
+                </div>
+            </div>
+
+            <div class="sign-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">信息统计</span>
+            </div>
+
+            <div class="info-census">
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
+                    </div>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">农专数量(户)</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">25</span>
+                            <span class="count-normal">.48万</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down" src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text info-census-item-updown-active">18.8%</span>
+                            <span class="info-census-item-down-text">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
+                    </div>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">出资总额</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">845</span>
+                            <span class="count-normal">.25亿</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up" src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text">18.8%</span>
+                            <span class="info-census-item-down-text info-census-item-updown-active">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
+                    </div>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">出资总额</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">845</span>
+                            <span class="count-normal">.25亿</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up" src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text">18.8%</span>
+                            <span class="info-census-item-down-text info-census-item-updown-active">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-census-item">
+                    <div class="info-census-item-img">
+                        <img src="./imgs/icon_info_census_item1.png" alt="">
+                    </div>
+                    <div class="info-census-item-content">
+                        <div class="info-census-item-title">出资总额</div>
+                        <div class="info-census-item-count">
+                            <span class="count-large">845</span>
+                            <span class="count-normal">.25亿</span>
+                        </div>
+                    </div>
+                    <div class="info-census-item-updown">
+                        <div>
+                            <img class="info-census-item-up" src="./imgs/icon_info-census-item-up.png" alt="">
+                            <img class="info-census-item-down info-census-item-updown-active"
+                                src="./imgs/icon_info-census-item-down.png" alt="">
+                            <span class="info-census-item-up-text">18.8%</span>
+                            <span class="info-census-item-down-text info-census-item-updown-active">18.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-total">
+                <div class="layui-tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">
+                            <span>农专数量</span>
+                        </li>
+                        <li><span>农专出资额</span></li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal9"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal10"></div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="charts-total-item">
+                                <div id="chartsTotal11"></div>
+                            </div>
+                            <div class="charts-total-item">
+                                <div id="chartsTotal12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-unique">
+                <div class="charts-unique-item">
+
+                </div>
+                <div class="charts-unique-item">
+                    <div class="charts-unique-title">行政处罚--违法及处罚类型占比</div>
+                    <div class="charts-unique-content-charts">
+                        <div id="chartsUnique5" style="width: 518px;height:350px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign-census money-census">
+                <img src="./imgs/img_business_census.png" alt="">
+                <span class="census-title">资金情况统计</span>
+            </div>
+
+            <div class="portal-content-table cooperative-table">
+                <div class="portal-content-table-header">
+                    <div class="portal-content-table-title">
+                        <span>企业资产总额最高TOP10</span>
+                    </div>
+                    <div class="portal-content-table-type">
+                        <div class="portal-content-table-type-up"></div>
+                        <div class="portal-content-table-type-up-text">
+                            <span>高于平均值</span>
+                        </div>
+                        <div class="portal-content-table-type-down"></div>
+                        <div class="portal-content-table-type-down-text">
+                            <span>低于平均值</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-content-table-content">
+                    <table class="layui-table" lay-even>
+                        <colgroup>
+                            <col width="60">
+                            <col>
+                            <col width="160">
+                            <col width="160">
+                            <col width="160">
+                            <col width="150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>企业名称</th>
+                                <th>资产额（亿元）</th>
+                                <th>营业收入（亿元）</th>
+                                <th>利润总额（亿元）</th>
+                                <th>资产总体情况</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>中国石化海南炼油化工有限公司</td>
+                                <td>288.8</td>
+                                <td>22.6</td>
+                                <td>32.6</td>
+                                <td class="portal-content-table-up">6.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
